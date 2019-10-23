@@ -18,7 +18,7 @@ function App() {
         <Carousel autoplay={true} interval= {500} showArrows={false} showIndicators={false} showStatus= {false} showThumbs = {false} infiniteLoop = {true}>
                 <div>
                     <img
-                    src="https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F540461%2Fexplaining-why-stock-going-up-2018_05_10-12_39_51-utc.jpg&w=700&op=resize" 
+                    src="https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_1280.jpg" 
                     alt="new"/>
                 </div>
                 <div>

@@ -4,17 +4,17 @@ import { Link } from 'react-router-dom';
 function Header() {
   return (
     <header style={headerStyle}>
-      <h1>El shortener</h1>
-      <Link style={linkStyle} to="/">Home</Link> | <Link style={linkStyle} to="/about">About</Link>
-    </header>
+      <h1 style={{marginTop:'10px',position:'absolute',left:'35%'}}>Sarasa Co.</h1>
+   </header>
   )
 }
 
 const headerStyle = {
-  background: '#333',
+  background: '#33b1ff',
   color: '#fff',
-  textAlign: 'center',
-  padding: '10px'
+ 
+ height:'45px',
+  textAlign:'center',
 }
 
 const linkStyle = {
