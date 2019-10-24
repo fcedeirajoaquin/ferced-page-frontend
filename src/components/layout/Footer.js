@@ -3,8 +3,10 @@ import React from 'react';
 function Footer() {
   return (
     <div style={FooterStyle}>
-      <p>Creado por mi, obvio</p>
-
+      <p style={{fontSize:'2rem'}}>Contactenos</p>
+      <form>
+     <input/> <input/>
+      </form>
     </div>
   )
 }

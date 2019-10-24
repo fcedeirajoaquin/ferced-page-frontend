@@ -5,21 +5,59 @@ import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import MovingBackground from './components/layout/MovingBackground';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Carousel from 'react-spring-3d-carousel';
+import Carousel from 'react-multi-carousel'; 
+import 'react-multi-carousel/lib/styles.css';
 import { Parallax, Background } from 'react-parallax';
-
 import MaterialIcon, {colorPalette} from 'material-icons-react';
 
 import './App.css';
 import { whileStatement } from '@babel/types';
 
 function App() {
-  var slides = [
-    {
-  
-      content: <img src="https://picsum.photos/800/800/?random" alt="8" />
-    }
-  ];
+  const responsive = {
+
+  superLargeDesktop: {
+
+    // the naming can be any, depends on you.
+
+    breakpoint: { max: 4000, min: 3000 },
+
+    items: 5,
+
+  },
+
+  desktop: {
+
+    breakpoint: { max: 3000, min: 1024 },
+
+    items: 3,
+
+  },
+
+  tablet: {
+
+    breakpoint: { max: 1024, min: 464 },
+
+    items: 2,
+
+  },
+
+  mobile: {
+
+    breakpoint: { max: 464, min: 0},
+
+    items: 3,
+    infinite:true, 
+    arrows: false,
+autoplay :true,
+
+  },
+
+};
+
+
+
+
   return (
     <Router>
     <div className="App">
@@ -46,7 +84,14 @@ function App() {
             <p style={{paddingLeft:"60px",paddingRight:"60px",paddingBottom:"30px",fontFamily: "apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif" ,fontWeight: "normal", color: "rgba(0, 0, 0, 0.87)",display:"block",textAlign:"center",fontSize:"14px",lineHeight:"2rem"}}>
             Estas son algunas de las tecnologias que podemos ofrecerte. En caso de necesitar otra tecnologia podes contactarte con nosotros.
             </p>
-            <Carousel slides={slides}  />
+            
+            <Carousel arrows={false} autoPlay={true} infinite={true} transitionDuration={100} responsive={responsive}>
+
+  <img src="https://picsum.photos/100/150/?random" alt="1"/>
+ <img src="https://picsum.photos/100/150/?random" alt="2"/>
+<img src="https://picsum.photos/100/150/?random" alt="3"/>
+<img src="https://picsum.photos/100/150/?random" alt="4"/>
+</Carousel>
         
  </div>
 
