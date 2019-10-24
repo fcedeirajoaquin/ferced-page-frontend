@@ -14,6 +14,10 @@ import './App.css';
 import { whileStatement } from '@babel/types';
 
 function App() {
+  const imageStyle = {
+    height:"90px"
+  }
+   
   const responsive = {
 
   superLargeDesktop: {
@@ -86,13 +90,13 @@ autoplay :true,
             </p>
             
             <Carousel centerMode={true} arrows={false} autoPlay={true} infinite={true} transitionDuration={100} responsive={responsive}>
-              <img style={{height:"90px"}} src={process.env.PUBLIC_URL +"/technologylogo/firebaselogo.png"} alt="3"/>
-              <img style={{height:"90px"}} src={process.env.PUBLIC_URL +"/technologylogo/angularlogo.svg"} alt="new"/>
-              <img style={{height:"90px"}} src={process.env.PUBLIC_URL +"/technologylogo/JsCssHtml5Logo.png"} alt="2"/>
-              <img style={{height:"90px"}} src={process.env.PUBLIC_URL +"/technologylogo/pythonlogo.svg"} alt="4"/>
-              <img style={{height:"90px"}} src={process.env.PUBLIC_URL +"/technologylogo/reactlogo.png"} alt="5"/>
-              <img style={{height:"90px"}} src={process.env.PUBLIC_URL +"/technologylogo/sqllogo.png"} alt="6"/>
-              <img style={{height:"90px"}} src={process.env.PUBLIC_URL +"/technologylogo/javalogo.png"} alt="1"/>
+              <img style={imageStyle} src={process.env.PUBLIC_URL +"/technologylogo/firebaselogo.png"} alt="3"/>
+              <img style={imageStyle} src={process.env.PUBLIC_URL +"/technologylogo/angularlogo.svg"} alt="new"/>
+              <img style={imageStyle} src={process.env.PUBLIC_URL +"/technologylogo/JsCssHtml5Logo.png"} alt="2"/>
+              <img style={imageStyle} src={process.env.PUBLIC_URL +"/technologylogo/pythonlogo.svg"} alt="4"/>
+              <img style={imageStyle} src={process.env.PUBLIC_URL +"/technologylogo/reactlogo.png"} alt="5"/>
+              <img style={imageStyle} src={process.env.PUBLIC_URL +"/technologylogo/sqllogo.png"} alt="6"/>
+              <img style={imageStyle} src={process.env.PUBLIC_URL +"/technologylogo/javalogo.png"} alt="1"/>
 </Carousel>
         
  </div>
