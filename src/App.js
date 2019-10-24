@@ -28,9 +28,9 @@ function App() {
 
   desktop: {
 
-    breakpoint: { max: 3000, min: 1024 },
+    breakpoint: { max: 200, min: 100 },
 
-    items: 3,
+    items: 2,
 
   },
 
@@ -85,12 +85,14 @@ autoplay :true,
             Estas son algunas de las tecnologias que podemos ofrecerte. En caso de necesitar otra tecnologia podes contactarte con nosotros.
             </p>
             
-            <Carousel arrows={false} autoPlay={true} infinite={true} transitionDuration={100} responsive={responsive}>
-
-  <img src="https://picsum.photos/100/150/?random" alt="1"/>
- <img src="https://picsum.photos/100/150/?random" alt="2"/>
-<img src="https://picsum.photos/100/150/?random" alt="3"/>
-<img src="https://picsum.photos/100/150/?random" alt="4"/>
+            <Carousel centerMode={true} arrows={false} autoPlay={true} infinite={true} transitionDuration={100} responsive={responsive}>
+              <img style={{height:"90px"}} src={process.env.PUBLIC_URL +"/technologylogo/firebaselogo.png"} alt="3"/>
+              <img style={{height:"90px"}} src={process.env.PUBLIC_URL +"/technologylogo/angularlogo.svg"} alt="new"/>
+              <img style={{height:"90px"}} src={process.env.PUBLIC_URL +"/technologylogo/JsCssHtml5Logo.png"} alt="2"/>
+              <img style={{height:"90px"}} src={process.env.PUBLIC_URL +"/technologylogo/pythonlogo.svg"} alt="4"/>
+              <img style={{height:"90px"}} src={process.env.PUBLIC_URL +"/technologylogo/reactlogo.png"} alt="5"/>
+              <img style={{height:"90px"}} src={process.env.PUBLIC_URL +"/technologylogo/sqllogo.png"} alt="6"/>
+              <img style={{height:"90px"}} src={process.env.PUBLIC_URL +"/technologylogo/javalogo.png"} alt="1"/>
 </Carousel>
         
  </div>
