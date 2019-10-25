@@ -19,7 +19,7 @@ function MovingBackground() {
         color: "white",
         top: "60%",
         left: "50%",
-        fontSize:"2rem",
+        fontSize:"120%",
         whiteSpace:"nowrap",
         transform: "translate(-50%,-50%)"
       };

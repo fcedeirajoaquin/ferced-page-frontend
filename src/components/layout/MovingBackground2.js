@@ -3,12 +3,13 @@ import { Parallax, Background } from 'react-parallax';
 
 function MovingBackground2() {
     const titleText = {
+
         padding: 20,
         position: "absolute",
         color: "white",
         top: "40%",
         left: "50%",
-        fontSize:"2.92rem",
+        fontSize:"150%",
         whiteSpace:"nowrap",
         transform: "translate(-50%,-50%)"
       };
@@ -18,7 +19,7 @@ function MovingBackground2() {
         color: "white",
         top: "60%",
         left: "50%",
-        fontSize:"2rem",
+        fontSize:"120%",
         whiteSpace:"nowrap",
         transform: "translate(-50%,-50%)"
       };
