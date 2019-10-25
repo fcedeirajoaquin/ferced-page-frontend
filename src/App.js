@@ -4,6 +4,8 @@ import logo from './logo.svg';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import MovingBackground from './components/layout/MovingBackground';
+import MovingBackground2 from './components/layout/MovingBackground2';
+import MovingBackground3 from './components/layout/MovingBackground3';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Carousel from 'react-multi-carousel'; 
 import 'react-multi-carousel/lib/styles.css';
@@ -50,7 +52,7 @@ function App() {
 
     breakpoint: { max: 464, min: 0},
 
-    items: 3,
+    items: 0.5,
     infinite:true, 
     arrows: false,
 autoplay :true,
@@ -88,8 +90,8 @@ autoplay :true,
             <p style={{paddingLeft:"60px",paddingRight:"60px",paddingBottom:"30px",fontFamily: "apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif" ,fontWeight: "normal", color: "rgba(0, 0, 0, 0.87)",display:"block",textAlign:"center",fontSize:"14px",lineHeight:"2rem"}}>
             Estas son algunas de las tecnologias que podemos ofrecerte. En caso de necesitar otra tecnologia podes contactarte con nosotros.
             </p>
-            
-            <Carousel centerMode={true} arrows={false} autoPlay={true} infinite={true} transitionDuration={100} responsive={responsive}>
+            <div style={{paddingBottom:"50px"}}>
+            <Carousel  centerMode={true} arrows={false} autoPlay={true} infinite={true} transitionDuration={100} responsive={responsive}>
               <img style={imageStyle} src={process.env.PUBLIC_URL +"/technologylogo/firebaselogo.png"} alt="3"/>
               <img style={imageStyle} src={process.env.PUBLIC_URL +"/technologylogo/angularlogo.svg"} alt="new"/>
               <img style={imageStyle} src={process.env.PUBLIC_URL +"/technologylogo/JsCssHtml5Logo.png"} alt="2"/>
@@ -97,10 +99,20 @@ autoplay :true,
               <img style={imageStyle} src={process.env.PUBLIC_URL +"/technologylogo/reactlogo.png"} alt="5"/>
               <img style={imageStyle} src={process.env.PUBLIC_URL +"/technologylogo/sqllogo.png"} alt="6"/>
               <img style={imageStyle} src={process.env.PUBLIC_URL +"/technologylogo/javalogo.png"} alt="1"/>
-</Carousel>
-        
+           </Carousel>
+        </div>
  </div>
 
+<MovingBackground2 />
+<div style={{background:"white",height:"50%",textAlign:"center",marginTop:"50px",marginBottom:"2px"}}>
+          <p style={{color:"#64B5F6",fontWeight:"400",fontSize:"2.92rem",lineHeight:"110%",margin:"1.9466666667rem 0 1.168rem 0", fontFamily: "apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif"}}>
+             Contacto
+            </p>
+            <p style={{paddingLeft:"60px",paddingRight:"60px",paddingBottom:"30px",fontFamily: "apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif" ,fontWeight: "normal", color: "rgba(0, 0, 0, 0.87)",display:"block",textAlign:"center",fontSize:"14px",lineHeight:"2rem"}}>
+            Dejanos tus datos y nosotros te contactamos
+</p>
+</div>    
+<MovingBackground3 />
        <Footer />
       </div>  
     </div>
