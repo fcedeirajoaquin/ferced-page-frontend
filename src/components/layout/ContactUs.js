@@ -11,7 +11,7 @@ class ContactUs extends Component {
 
   render () { 
       return ( 
-          <>
+          <div style={{paddingBottom:"60px"}}>
         <div style={{ background: "white", height: "50%", textAlign: "center", marginTop: "50px", marginBottom: "2px" }}>
         <p style={{ color: "#64B5F6", fontWeight: "400", fontSize: "2.92rem", lineHeight: "110%", margin: "1.9466666667rem 0 1.168rem 0", fontFamily: "apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif" }}>
           Contacto
@@ -22,7 +22,7 @@ class ContactUs extends Component {
       </p>
       </div>
         <TextField
-  label="Numero "
+placeHolder="Nombre"
   InputProps={{
     startAdornment: (
       <InputAdornment>
@@ -33,8 +33,43 @@ class ContactUs extends Component {
     )
   }}
 />
-
-</>
+<TextField
+  label="Telefono"
+  InputProps={{
+    startAdornment: (
+      <InputAdornment>
+        <IconButton>
+          <AccountCircleSharpIcon />
+        </IconButton>
+      </InputAdornment>
+    )
+  }}
+/>
+<TextField
+  label="Email"
+  InputProps={{
+    startAdornment: (
+      <InputAdornment>
+        <IconButton>
+          <AccountCircleSharpIcon />
+        </IconButton>
+      </InputAdornment>
+    )
+  }}
+/>
+<TextField
+  label="Nota"
+  InputProps={{
+    startAdornment: (
+      <InputAdornment>
+        <IconButton>
+          <AccountCircleSharpIcon />
+        </IconButton>
+      </InputAdornment>
+    )
+  }}
+/>
+</div>
       )
 }
 }
