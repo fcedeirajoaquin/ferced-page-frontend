@@ -4,8 +4,11 @@ import TextField from '@material-ui/core/TextField';
 import IconButton from "@material-ui/core/IconButton";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import AccountCircleSharpIcon from '@material-ui/icons/AccountCircleSharp';
-
-
+import {
+  Row,
+  Col,
+  Button
+} from "reactstrap";
 
 class ContactUs extends Component {
 
@@ -21,8 +24,49 @@ class ContactUs extends Component {
           Dejanos tus datos y nosotros te contactamos
       </p>
       </div>
-        <TextField
-placeHolder="Nombre"
+      <div>
+ 
+</div>
+<Row>
+
+<TextField
+id="standard-with-placeholder"
+style={{marginLeft:"5%",marginRight:"5%",width:"40%"}}
+placeholder="Nombre"
+  InputProps={{
+    startAdornment: (
+      <InputAdornment>
+        <IconButton>
+          <AccountCircleSharpIcon />
+        </IconButton>
+      </InputAdornment>
+    )
+  }}
+/>
+
+<TextField
+id="standard-with-placeholder"
+style={{marginLeft:"5%",marginRight:"5%",width:"40%"}}
+placeholder="Telefono"
+  InputProps={{
+    startAdornment: (
+      <InputAdornment>
+        <IconButton>
+          <AccountCircleSharpIcon />
+        </IconButton>
+      </InputAdornment>
+    )
+  }}
+/>
+
+</Row>
+
+
+<Row>
+<TextField
+id="standard-with-placeholder"
+style={{marginLeft:"5%",marginRight:"5%",width:"40%"}}
+placeholder="Email"
   InputProps={{
     startAdornment: (
       <InputAdornment>
@@ -34,7 +78,10 @@ placeHolder="Nombre"
   }}
 />
 <TextField
-  label="Telefono"
+id="standard-with-placeholder"
+style={{marginLeft:"5%",marginRight:"5%",width:"40%"}}
+  placeholder="Nota"
+  
   InputProps={{
     startAdornment: (
       <InputAdornment>
@@ -45,30 +92,9 @@ placeHolder="Nombre"
     )
   }}
 />
-<TextField
-  label="Email"
-  InputProps={{
-    startAdornment: (
-      <InputAdornment>
-        <IconButton>
-          <AccountCircleSharpIcon />
-        </IconButton>
-      </InputAdornment>
-    )
-  }}
-/>
-<TextField
-  label="Nota"
-  InputProps={{
-    startAdornment: (
-      <InputAdornment>
-        <IconButton>
-          <AccountCircleSharpIcon />
-        </IconButton>
-      </InputAdornment>
-    )
-  }}
-/>
+</Row>
+
+<Button>Enviar</Button>
 </div>
       )
 }

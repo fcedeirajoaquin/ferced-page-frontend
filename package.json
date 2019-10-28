@@ -18,6 +18,7 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
     "react-spring-3d-carousel": "^1.1.4",
+    "reactstrap": "^8.1.1",
     "uuidv4": "^5.0.1"
   },
   "scripts": {
