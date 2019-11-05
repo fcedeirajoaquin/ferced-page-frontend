@@ -12,11 +12,11 @@ import './App.css';
 function App() {
   return (
     <Router>
-      <div className="App">
-        <div >
+      <div>
+        <div className="App" >
        
-         <Header style={{ position: "absolute",left:"20px"  }}/>
-          <MovingBackground style={{zIndex:1,postion:"absolute"}} image={process.env.PUBLIC_URL + "/background1.jpg"} title={"Construimos tu mundo digital."} subTitle={"Software de alto rendimiento."} />
+         <Header/>
+          <MovingBackground image={process.env.PUBLIC_URL + "/background1.jpg"} title={"Construimos tu mundo digital."} subTitle={"Software de alto rendimiento."} />
           
           
        

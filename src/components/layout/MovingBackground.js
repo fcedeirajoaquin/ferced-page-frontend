@@ -34,7 +34,7 @@ class MovingBackground extends Component {
         bgImageAlt=""
         strength={400}
         >
-          <Header />
+      
         <p style = {this.titleText}>{this.props.title}</p>
         <p style = {this.subTitleText}>{this.props.subTitle}</p>
         <div style={{ height: '400px' }} />

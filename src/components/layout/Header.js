@@ -4,13 +4,12 @@ import { Link } from 'react-router-dom';
 function Header() {
   var imageShadowStyle = {
 filter: 'brightness(0%)',
-left:'40%',
     height: "60px",
+    marginLeft:"-5px",
 position:'absolute',
 zIndex:0
   }
 var imageStyle = {
-    left:'41%',
     height: "60px",
 position:'absolute',
 zIndex:1
@@ -30,7 +29,7 @@ const headerStyle = {
   textAlign:'center',
   alignContent:"center",
 position:"absolute",
-top:"30px",
+width:"100%",
 zIndex:3
 }
 
