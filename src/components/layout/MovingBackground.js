@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Parallax, Background } from 'react-parallax';
+import Header from './Header';
 
 class MovingBackground extends Component {
     titleText = {
@@ -33,6 +34,7 @@ class MovingBackground extends Component {
         bgImageAlt=""
         strength={400}
         >
+          <Header />
         <p style = {this.titleText}>{this.props.title}</p>
         <p style = {this.subTitleText}>{this.props.subTitle}</p>
         <div style={{ height: '400px' }} />

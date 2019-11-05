@@ -2,19 +2,25 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Header() {
+  var imageStyle = {
+    height: "60px"
+  }
   return (
     <header style={headerStyle}>
-      <h1 style={{marginTop:'10px',position:'absolute',left:'35%'}}>Sarasa Co.</h1>
+      <div style={{background:"#000",width:"200px",height:"55px",marginLeft:"40%"}}>
+      <img style={imageStyle} src={process.env.PUBLIC_URL + "/ourLogos/fercedLogo.png"}/>
+
+      </div>
    </header>
   )
 }
 
 const headerStyle = {
-  background: '#33b1ff',
+  backgroundColor: "rgba(0,0,0,0.5)",
   color: '#fff',
- 
- height:'55px',
+  height:'55px',
   textAlign:'center',
+  alignContent:"center"
 }
 
 const linkStyle = {
