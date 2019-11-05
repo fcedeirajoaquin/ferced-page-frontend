@@ -14,11 +14,11 @@ function App() {
     <Router>
       <div className="App">
         <div >
-          <div style={{position: "relative"}}>
-
-          <MovingBackground style={{postion:"absolute"}} image={process.env.PUBLIC_URL + "/background1.jpg"} title={"Construimos tu mundo digital."} subTitle={"Software de alto rendimiento."} />
+       
+         <Header style={{ position: "absolute",left:"20px"  }}/>
+          <MovingBackground style={{zIndex:1,postion:"absolute"}} image={process.env.PUBLIC_URL + "/background1.jpg"} title={"Construimos tu mundo digital."} subTitle={"Software de alto rendimiento."} />
           
-          </div>
+          
        
           <div style={{ background: "white", height: "20%", textAlign: "center", marginTop: "50px", marginBottom: "2px" }}>
             <MaterialIcon icon="business" size="large" color="#64B5F6" />
