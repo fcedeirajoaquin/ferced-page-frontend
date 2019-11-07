@@ -7,6 +7,7 @@ import ImageCarousel from './components/layout/ImageCarousel';
 import MovingBackground from './components/layout/MovingBackground';
 import MaterialIcon, { colorPalette } from 'material-icons-react';
 import './App.css';
+import StickyHeader from 'react-sticky-header';
 
 
 function App() {
@@ -14,14 +15,15 @@ function App() {
     <Router>
       <div>
         <div className="App" >
-       
-         <Header/>
+        <StickyHeader
+        header={  <Header/>  }   
+        >
+           
+        </StickyHeader>
           <MovingBackground image={process.env.PUBLIC_URL + "/background1.jpg"} title={"Construimos tu mundo digital."} subTitle={"Software de alto rendimiento."} />
-          
-          
-       
           <div style={{ background: "white", height: "20%", textAlign: "center", marginTop: "50px", marginBottom: "2px" }}>
             <MaterialIcon icon="business" size="large" color="#64B5F6" />
+
             <p style={{ color: "#64B5F6", fontWeight: "400", fontSize: "2.92rem", lineHeight: "110%", margin: "1.9466666667rem 0 1.168rem 0", fontFamily: "apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif" }}>
               Acerca de nosotros
             </p>
@@ -41,11 +43,8 @@ function App() {
             <ImageCarousel />
           </div>
           <MovingBackground image={process.env.PUBLIC_URL + "/background2.jpg"} title={"Software multiplataforma."} subTitle={"Tus ideas en todos los dispositivos."} />
-
           <ContactUs />
-
           <MovingBackground image={process.env.PUBLIC_URL + "/background3.jpg"} title={"Llevamos el mundo de tus sueños a la realidad."} subTitle={""} />
-          
         </div>
       </div>
       <Footer />

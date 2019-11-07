@@ -1,39 +1,66 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 class Header extends Component {
-  imageShadowStyle = {
-filter: 'brightness(0%)',
-    height: "60px",
-    marginLeft:"-5px",
-position:'absolute',
-zIndex:0
+  state = {
+    color: 'rgba(0,0,0,0.5)'
   }
-imageStyle = {
-    height: "60px",
-position:'absolute',
-zIndex:1
+
+  listenScrollEvent = e => {
+    if (window.scrollY/70 > 0.5) {
+      this.setState({color: 'rgba(0,0,0,'+(window.scrollY/70).toString()+')'})
+    } else {
+      this.setState({color: 'rgba(0,0,0,0.5)'})
+    }
   }
- headerStyle = {
-    backgroundColor: "rgba(0,0,0,0.5)",
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.listenScrollEvent)
+  }
+  imageShadowStyle = 
+  {
+    filter: 'brightness(0%)',
+    height: "60px",
+    marginLeft: "-20px",
+    position: 'absolute',
+    zIndex: 0
+  }
+  imageStyle = 
+  {
+    height: "60px",
+    marginLeft: "-15px",
+    position: 'absolute',
+    zIndex: 1
+  }
+  headerStyle = 
+  {
+    backgroundColor: this.state.color,
     color: '#fff',
-    height:'55px',
-    textAlign:'center',
-    alignContent:"center",
-  position:"absolute",
-  width:"100%",
-  zIndex:3
+    height: '55px',
+    textAlign: 'center',
+    alignContent: "center",
+    position: "fixed",
+    width: "100%",
+    zIndex: 3
   }
   render() {
-return(
-  <header style={this.headerStyle}>
-  <img style={this.imageStyle} src={process.env.PUBLIC_URL + "/ourLogos/fercedLogo.png"}/>
-  <img style={this.imageShadowStyle } src={process.env.PUBLIC_URL + "/ourLogos/fercedLogo.png"}/>
-</header>
+    return (
+      <header style={{
+        backgroundColor: this.state.color,
+    color: '#fff',
+    height: '55px',
+    textAlign: 'center',
+    alignContent: "center",
+    position: "fixed",
+    width: "100%",
+    zIndex: 3
+      }}>
+        <img style={this.imageStyle} src={process.env.PUBLIC_URL + "/ourLogos/fercedLogo.png"} />
+        <img style={this.imageShadowStyle} src={process.env.PUBLIC_URL + "/ourLogos/fercedLogo.png"} />
+      </header>
 
-)
+    )
   }
-
 }
 
 
