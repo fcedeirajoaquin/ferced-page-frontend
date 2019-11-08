@@ -21,14 +21,14 @@ class Header extends Component {
   {
     filter: 'brightness(0%)',
     height: "60px",
-    marginLeft: "-20px",
+    marginLeft: "-30px",
     position: 'absolute',
     zIndex: 0
   }
   imageStyle = 
   {
     height: "60px",
-    marginLeft: "-15px",
+    marginLeft: "-25px",
     position: 'absolute',
     zIndex: 1
   }
