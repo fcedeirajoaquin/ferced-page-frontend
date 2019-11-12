@@ -6,14 +6,15 @@ import InputAdornment from "@material-ui/core/InputAdornment";
 import AccountCircleSharpIcon from '@material-ui/icons/AccountCircleSharp';
 import Grid from '@material-ui/core/Grid';
 import AccountCircle from '@material-ui/icons/AccountCircle';
-
+import Button from '@material-ui/core/Button';
+import Icon from '@material-ui/core/Icon';
 import {
   Row,
   Col,
   FormGroup,
   Input,
   Label,
-  Button
+
 } from "reactstrap";
 
 
@@ -28,7 +29,6 @@ export default function ContactUs () {
 
   const classes = useStyles();
       return (
-        <div>
        
          <div style={{paddingBottom:"60px"}}>
          <div style={{ background: "white", height: "50%", textAlign: "center", marginTop: "50px", marginBottom: "2px" }}>
@@ -41,9 +41,9 @@ export default function ContactUs () {
        </p>
        </div>
   
- </div>
- 
- <Row>
+<Col>
+
+<Row>
  <div className={classes.margin}>
         <Grid container spacing={1} alignItems="flex-end">
           <Grid item>
@@ -92,7 +92,16 @@ export default function ContactUs () {
 
 
  </Row>
- <Button>Enviar</Button>
+</Col>
+ 
+ <Button
+        variant="contained"
+        color="primary"
+        className={classes.button}
+        endIcon={<Icon>send</Icon>}
+      >
+        Send
+      </Button>
  </div>
       );
     }
