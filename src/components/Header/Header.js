@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 
 class Header extends Component {
   state = {
@@ -55,8 +54,8 @@ class Header extends Component {
     width: "100%",
     zIndex: 3
       }}>
-        <img style={this.imageStyle} src={process.env.PUBLIC_URL + "/ourLogos/fercedLogo.png"} />
-        <img style={this.imageShadowStyle} src={process.env.PUBLIC_URL + "/ourLogos/fercedLogo.png"} />
+        <img style={this.imageStyle} src={process.env.PUBLIC_URL + "/ourLogos/fercedLogo.png"} alt={"fercedLogo"} />
+        <img style={this.imageShadowStyle} src={process.env.PUBLIC_URL + "/ourLogos/fercedLogo.png"}  alt={"fercedLogoShadow"}/>
       </header>
 
     )

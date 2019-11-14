@@ -1,15 +1,14 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Header from './components/layout/Header';
-import Footer from './components/layout/Footer';
-import ContactUs from './components/layout/ContactUs';
-import ImageCarousel from './components/layout/ImageCarousel';
-import MovingBackground from './components/layout/MovingBackground';
-import MaterialIcon, { colorPalette } from 'material-icons-react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import ContactUs from './components/ContactUs/ContactUs';
+import ImageCarousel from './components/ImageCarousel/ImageCarousel';
+import MovingBackground from './components/MovingBackground/MovingBackground';
+import MaterialIcon from 'material-icons-react';
 import Zoom from 'react-reveal/Zoom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import StickyHeader from 'react-sticky-header';
 
 
 function App() {

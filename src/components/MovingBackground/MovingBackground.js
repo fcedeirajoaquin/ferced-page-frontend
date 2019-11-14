@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Parallax, Background } from 'react-parallax';
-import Header from './Header';
+import { Parallax } from 'react-parallax';
+
 
 class MovingBackground extends Component {
     titleText = {

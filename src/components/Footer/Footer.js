@@ -1,8 +1,7 @@
 import React,  { Component } from 'react';
 import {
   Row,
-  Col,
-  Container
+  Col
 } from "reactstrap";
 
 class Footer extends Component {
@@ -12,8 +11,8 @@ class Footer extends Component {
     <Row>
       <Col style={{width:"50%"}}>
       <p style={{fontSize:'1.15rem'}}>Encontranos tambien en</p>
-      <img style = {{height:"30px"}} src={process.env.PUBLIC_URL + "/footerlogo/githublogo.png"}/>
-      <img style = {{height:"30px"}} src={process.env.PUBLIC_URL + "/footerlogo/telegramlogo.png"}/>
+      <img style = {{height:"30px"}} src={process.env.PUBLIC_URL + "/footerlogo/githublogo.png"} alt={"github"} />
+      <img style = {{height:"30px"}} src={process.env.PUBLIC_URL + "/footerlogo/telegramlogo.png"} alt={"telegram"}/>
       </Col>
     <Col style={{width:"50%"}}>
     <p style={{fontSize:'1.15rem'}}>
