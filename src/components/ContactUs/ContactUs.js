@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import React from 'react';
+import { makeStyles} from '@material-ui/core/styles';
+import Typography from '@material-ui/core/Typography';
 import TextField from '@material-ui/core/TextField';
 import Grid from '@material-ui/core/Grid';
 import {MessageSharp,PhoneSharp,EmailSharp, AccountCircle} from '@material-ui/icons';
@@ -9,6 +10,7 @@ import {
   Row,
   Col,
 } from "reactstrap";
+import "./ContactUs.css"
 
 
 const useStyles = makeStyles(theme => ({
@@ -18,24 +20,23 @@ const useStyles = makeStyles(theme => ({
 }));
 
 
-class ContactUs extends Component {
+export default function ContactUs () {
 
-  classes = useStyles();
-      render () { return (
+  const classes = useStyles();
+      return (
          <div style={{paddingBottom:"60px"}}>
           <div style={{ background: "white", height: "50%", textAlign: "center", marginTop: "50px", marginBottom: "2px" }}>
-          <p style={{ color: "#64B5F6", fontWeight: "400", fontSize: "2.92rem", lineHeight: "110%", margin: "1.9466666667rem 0 1.168rem 0", fontFamily: "apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif" }}>
+          <Typography variant="h2" gutterBottom style={{color:"rgb(100, 181, 246)"}}>          
            Contacto
-          </p>
-          
-          <p style={{ paddingLeft: "60px", paddingRight: "60px", paddingBottom: "30px", fontFamily: "apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif", fontWeight: "normal", color: "rgba(0, 0, 0, 0.87)", display: "block", textAlign: "center", fontSize: "14px", lineHeight: "2rem" }}>
+          </Typography>
+          <Typography variant="body1" gutterBottom>
            Dejanos tus datos y nosotros te contactamos
-       </p>
+           </Typography>
        </div>
-<Col  className="formInputGroup" style = {{margin:"0%"}}>
+<Col  className="justify-content-md-center" style = {{margin:"0%"}}>
 
 <Row  className="justify-content-md-center">
- <div className={this.classes.margin} style={{marginRight:"5%"}}>
+ <div className={classes.margin} style={{marginRight:"5%"}}>
         <Grid container spacing={1} alignItems="flex-end">
           <Grid item>
             <AccountCircle />
@@ -45,7 +46,7 @@ class ContactUs extends Component {
           </Grid>
         </Grid>
       </div>
-      <div className={this.classes.margin}>
+      <div className={classes.margin}>
         <Grid container spacing={1} alignItems="flex-end">
           <Grid item>
             <PhoneSharp />
@@ -60,7 +61,7 @@ class ContactUs extends Component {
  </Row>
  
  <Row className="justify-content-md-center">
- <div className={this.classes.margin} style={{marginRight:"5%"}}>
+ <div className={classes.margin} style={{marginRight:"5%"}}>
         <Grid container spacing={1} alignItems="flex-end">
           <Grid item>
           <EmailSharp />
@@ -70,7 +71,7 @@ class ContactUs extends Component {
           </Grid>
         </Grid>
       </div>
-      <div className={this.classes.margin}>
+      <div className={classes.margin}>
         <Grid container spacing={1} alignItems="flex-end">
           <Grid item>
             <MessageSharp />
@@ -89,14 +90,13 @@ class ContactUs extends Component {
  
  <Button
         variant="contained"
-        className={this.classes.button}
+        className={classes.button}
         endIcon={<Icon>send</Icon>}
         style= {{background:"rgb(25, 118, 210)",color:"white"}}
       >
         Enviar
       </Button>
  </div>
-      )};
+      );
     }
 
-export default ContactUs;
