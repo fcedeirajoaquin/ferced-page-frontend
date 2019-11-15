@@ -9,7 +9,7 @@ import MaterialIcon from 'material-icons-react';
 import Zoom from 'react-reveal/Zoom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Typography from '@material-ui/core/Typography';
 
 function App() {
   return (
@@ -17,12 +17,15 @@ function App() {
       <div>
         <div className="App" >
           <Header />
+        
           <MovingBackground image={process.env.PUBLIC_URL + "/background1.jpg"} title={"Construimos tu mundo digital."} subTitle={"Software de alto rendimiento."} />
-          <div style={{ background: "white", height: "20%", textAlign: "center", marginTop: "50px", marginBottom: "2px" }}>
+        
+           <div style={{ background: "white", height: "20%", textAlign: "center", marginTop: "50px", marginBottom: "2px" }}>
             <MaterialIcon icon="business" size="large" color="#64B5F6" />
-            <p style={{ color: "#64B5F6", fontWeight: "400", fontSize: "2.92rem", lineHeight: "110%", margin: "1.9466666667rem 0 1.168rem 0", fontFamily: "apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif" }}>
-              Acerca de nosotros
-            </p>
+         
+       <Typography variant="h2" gutterBottom style={{color:"rgb(100, 181, 246)"}}>           
+Acerca de nosotros
+            </Typography>
             
             <Zoom>
             
@@ -36,10 +39,10 @@ function App() {
           <div style={{ background: "white", height: "20%", textAlign: "center", marginTop: "50px", marginBottom: "2px" }}>
             <MaterialIcon icon="developer_mode" size="large" color="#64B5F6" />
             <Zoom>
-            <p style={{ color: "#64B5F6", fontWeight: "400", fontSize: "2.92rem", lineHeight: "110%", margin: "1.9466666667rem 0 1.168rem 0", fontFamily: "apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif" }}>
-              Tecnologías
-            </p>
-            <p style={{ paddingLeft: "60px", paddingRight: "60px", paddingBottom: "30px", fontFamily: "apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif", fontWeight: "normal", color: "rgba(0, 0, 0, 0.87)", display: "block", textAlign: "center", fontSize: "14px", lineHeight: "2rem" }}>
+  <Typography variant="h2" gutterBottom style={{color:"rgb(100, 181, 246)"}}>           
+          Tecnologías
+          </Typography> 
+           <p style={{ paddingLeft: "60px", paddingRight: "60px", paddingBottom: "30px", fontFamily: "apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif", fontWeight: "normal", color: "rgba(0, 0, 0, 0.87)", display: "block", textAlign: "center", fontSize: "14px", lineHeight: "2rem" }}>
               Estas son algunas de las tecnologias que podemos ofrecerte. En caso de necesitar otra tecnologia podes contactarte con nosotros.
             </p>
             </Zoom>

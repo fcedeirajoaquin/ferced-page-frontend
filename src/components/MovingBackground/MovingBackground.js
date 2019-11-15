@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 import { Parallax } from 'react-parallax';
+import Zoom from 'react-reveal/Zoom';
+import {
+  Row,
+  Col,
+} from "reactstrap";
 
 
 class MovingBackground extends Component {
@@ -34,10 +39,12 @@ class MovingBackground extends Component {
         bgImageAlt=""
         strength={400}
         >
-      
+ <Zoom style={{margin:"0%",width:"10%",textAlign:"center"}}>
         <p style = {this.titleText}>{this.props.title}</p>
         <p style = {this.subTitleText}>{this.props.subTitle}</p>
-        <div style={{ height: '400px' }} />
+  </Zoom>
+
+ <div style={{ height: '400px' }} />
         </Parallax>
       )
 }
