@@ -2,7 +2,7 @@
   "name": "ferced-page-frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": ".",
+  "homepage": "http://ferced.github.io/ferced-page-frontend",
   "dependencies": {
     "@material-ui/core": "^4.5.1",
     "@material-ui/icons": "^4.5.1",
@@ -27,6 +27,8 @@
     "uuidv4": "^5.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
