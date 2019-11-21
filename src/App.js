@@ -18,7 +18,6 @@ function App() {
       <div>
         <div className="App" >
           <Header />
-          <button onClick={() => scrollToComponent(2020, { offset: 0, align: 'bottom', duration: 500, ease:'inExpo'})}>Go To Indigo</button>
           <MovingBackground image={process.env.PUBLIC_URL + "/background1.jpg"} title={"Construimos tu mundo digital."} subTitle={"Software de alto rendimiento."} />
           
           <div style={{ background: "white", height: "20%", textAlign: "center", marginTop: "50px", marginBottom: "2px" }}>
@@ -46,9 +45,8 @@ function App() {
             </Zoom>
             <ImageCarousel />
           </div>
-          <section className='indigo' ref={2020}>
           <MovingBackground image={process.env.PUBLIC_URL + "/background3.jpg"} title={"Llevamos el mundo de tus sueños a la realidad."} subTitle={""} />
-           </section>
+
           <ContactUs />
         </div>
       </div>
