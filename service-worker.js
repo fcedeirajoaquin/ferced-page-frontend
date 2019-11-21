@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ferced-page-frontend/precache-manifest.793a430b50d53adba3359d1852325ded.js"
+  "/ferced-page-frontend/precache-manifest.8008a93845a145f6c77a963b5b1ca62f.js"
 );
 
 self.addEventListener('message', (event) => {

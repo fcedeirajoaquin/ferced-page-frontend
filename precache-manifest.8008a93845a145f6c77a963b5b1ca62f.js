@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "94e7ec91346da5c4f4fac3fa79eda7a0",
+    "revision": "c71231b79fa56e8512f417bf3a0a5545",
     "url": "/ferced-page-frontend/index.html"
   },
   {
-    "revision": "5d822ab1e3165618606b",
+    "revision": "4b8cb907bd36b578bebc",
     "url": "/ferced-page-frontend/static/css/2.f997cfaa.chunk.css"
   },
   {
-    "revision": "a0484e1338c29b60809b",
+    "revision": "338cee43517ab6f2f33a",
     "url": "/ferced-page-frontend/static/css/main.cdfc0761.chunk.css"
   },
   {
-    "revision": "5d822ab1e3165618606b",
-    "url": "/ferced-page-frontend/static/js/2.48f97b85.chunk.js"
+    "revision": "4b8cb907bd36b578bebc",
+    "url": "/ferced-page-frontend/static/js/2.cde87dd0.chunk.js"
   },
   {
-    "revision": "a0484e1338c29b60809b",
-    "url": "/ferced-page-frontend/static/js/main.f9c48210.chunk.js"
+    "revision": "338cee43517ab6f2f33a",
+    "url": "/ferced-page-frontend/static/js/main.c6bd20f5.chunk.js"
   },
   {
     "revision": "c1f42296acdbbe8bcfb2",

@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ferced-page-frontend/static/css/main.cdfc0761.chunk.css",
-    "main.js": "/ferced-page-frontend/static/js/main.f9c48210.chunk.js",
-    "main.js.map": "/ferced-page-frontend/static/js/main.f9c48210.chunk.js.map",
+    "main.js": "/ferced-page-frontend/static/js/main.c6bd20f5.chunk.js",
+    "main.js.map": "/ferced-page-frontend/static/js/main.c6bd20f5.chunk.js.map",
     "runtime-main.js": "/ferced-page-frontend/static/js/runtime-main.75b46795.js",
     "runtime-main.js.map": "/ferced-page-frontend/static/js/runtime-main.75b46795.js.map",
     "static/css/2.f997cfaa.chunk.css": "/ferced-page-frontend/static/css/2.f997cfaa.chunk.css",
-    "static/js/2.48f97b85.chunk.js": "/ferced-page-frontend/static/js/2.48f97b85.chunk.js",
-    "static/js/2.48f97b85.chunk.js.map": "/ferced-page-frontend/static/js/2.48f97b85.chunk.js.map",
+    "static/js/2.cde87dd0.chunk.js": "/ferced-page-frontend/static/js/2.cde87dd0.chunk.js",
+    "static/js/2.cde87dd0.chunk.js.map": "/ferced-page-frontend/static/js/2.cde87dd0.chunk.js.map",
     "index.html": "/ferced-page-frontend/index.html",
-    "precache-manifest.793a430b50d53adba3359d1852325ded.js": "/ferced-page-frontend/precache-manifest.793a430b50d53adba3359d1852325ded.js",
+    "precache-manifest.8008a93845a145f6c77a963b5b1ca62f.js": "/ferced-page-frontend/precache-manifest.8008a93845a145f6c77a963b5b1ca62f.js",
     "service-worker.js": "/ferced-page-frontend/service-worker.js",
     "static/css/2.f997cfaa.chunk.css.map": "/ferced-page-frontend/static/css/2.f997cfaa.chunk.css.map",
     "static/css/main.cdfc0761.chunk.css.map": "/ferced-page-frontend/static/css/main.cdfc0761.chunk.css.map",
@@ -18,8 +18,8 @@
   "entrypoints": [
     "static/js/runtime-main.75b46795.js",
     "static/css/2.f997cfaa.chunk.css",
-    "static/js/2.48f97b85.chunk.js",
+    "static/js/2.cde87dd0.chunk.js",
     "static/css/main.cdfc0761.chunk.css",
-    "static/js/main.f9c48210.chunk.js"
+    "static/js/main.c6bd20f5.chunk.js"
   ]
 }
