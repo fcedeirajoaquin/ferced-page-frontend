@@ -19,18 +19,18 @@ class Footer extends Component {
               <p style={{ fontSize: '1.15rem' }}>
                 Indice
               </p>
-              <p>
+              <p onClick={this.props.scrollToRef.bind(this.props.contactRef)}>
                 Acerca de Ferced
               </p>
-              <p>
+              <p onClick={this.props.scrollToRef.bind(this.props.technologyRef)}>
                 Tecnologias
               </p>
-              <p>
+              <p onClick={this.props.scrollToRef.bind(this.props.contactRef)}>
                 Contacto
               </p>
-              <p>
+              {/* <p onClick={this.props.scrollToRef.bind(this.props.contactRef)}>
                 Redes sociales
-              </p>
+              </p> */}
 
             </Col>
           </Row>
