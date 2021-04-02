@@ -23,10 +23,10 @@ function App() {
           <div style={{ background: "black", height: "100vh" }}>
             <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '100vh'}}>
               <Fade delay={1500} style={{ width: "1000px" }}>
-                <img src="/images/fercedLogo.png" />
+                <img src="/images/fercedLogo.png" alt="fercedlogo" />
               </Fade>
               <Fade delay={2000}>
-                <img src="/images/fercedLogoText.png" style={{ height: "300px" }} />
+                <img src="/images/fercedLogoText.png" alt="fercedlogoText" style={{ height: "300px" }} />
               </Fade>
             </div>
           </div>
