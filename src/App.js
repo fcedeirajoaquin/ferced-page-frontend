@@ -5,11 +5,11 @@ import Fade from 'react-reveal/Fade';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Solutions from './components/SolutionsWeDeliver/SolutionsWeDeliver';
 function App() {
-  const contactRef = React.createRef();
-  const technologyRef = React.createRef();
-  const aboutUsRef = React.createRef();
-  const socialNetworksRef = React.createRef();
-  const scrollToRef = (refSection) =>
+  // const contactRef = React.createRef();
+  // const technologyRef = React.createRef();
+  // const aboutUsRef = React.createRef();
+  // const socialNetworksRef = React.createRef();
+  // const scrollToRef = (refSection) =>
     refSection.current.scrollIntoView({
       behavior: 'smooth',
       block: 'start',
