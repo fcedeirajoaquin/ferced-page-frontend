@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import {Col, Row} from 'reactstrap';
 import Fade from 'react-reveal/Fade';
-import MaterialIcon from 'material-icons-react';
-// hola
+import AutorenewIcon from '@material-ui/icons/Autorenew';
+import CodeIcon from '@material-ui/icons/Code';
+import AppsIcon from '@material-ui/icons/Apps';
+import BackupIcon from '@material-ui/icons/Backup';
+
 class Solutions extends Component {    
     render() {
         return (
@@ -13,18 +16,18 @@ class Solutions extends Component {
                     <Row xs="2" style={{display: 'flex',  justifyContent:'center', alignItems:'center',width:"100%", height:"100%"}} >
                         <Fade left duration="5000">
                             <Col>
-                            <MaterialIcon icon="autorenew" size='large' color="pink"/><p style={{fontSize:"20px"}}> Business Processes Automation</p>
+                            <AutorenewIcon size='large' color="pink"/><p style={{fontSize:"20px"}}> Business Processes Automation</p>
                             </Col>
                             <Col>
-                            <MaterialIcon icon="code" size='large' color="green"/><p style={{fontSize:"20px"}}> Web y Mobile applications</p>
+                            <CodeIcon size='large' color="green"/><p style={{fontSize:"20px"}}> Web y Mobile applications</p>
                             </Col>
                         </Fade>
                         <Fade right duration="5000">
                         <Col>
-                            <MaterialIcon icon="integration_instructions" size='large' color="violet"/><p style={{fontSize:"20px"}}> Integrations</p>
+                            <AppsIcon size='large' color="violet"/><p style={{fontSize:"20px"}}> Integrations</p>
                             </Col>
                             <Col>
-                            <MaterialIcon icon="multiple_stop" size='large' color="yellow"/><p style={{fontSize:"20px"}}> Scaling Product Delivery</p>
+                            <BackupIcon size='large' color="yellow"/><p style={{fontSize:"20px"}}> Scaling Product Delivery</p>
                             </Col>
                         </Fade>
                     
