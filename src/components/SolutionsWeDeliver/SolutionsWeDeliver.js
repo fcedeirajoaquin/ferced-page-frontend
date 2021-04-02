@@ -1,17 +1,12 @@
 import React, { Component } from 'react';
 import {Col, Row} from 'reactstrap';
-import MaterialIcon, {colorPalette} from 'material-icons-react';
-import Pulse from 'react-reveal/Pulse';
 import Fade from 'react-reveal/Fade';
-import zIndex from '@material-ui/core/styles/zIndex';
+import MaterialIcon from 'material-icons-react';
 
 class Solutions extends Component {    
-
-
     render() {
         return (
       
-
             <div style={{  background:  "url(https://i.pinimg.com/originals/b9/a2/9a/b9a29a075ec4beb68025515f63432880.gif)", backgroundSize:"cover", 
                 color:"white",  height:"100vh"}}>
                 <div style={{backgroundColor:"black", opacity:"0.8", height:"100%"}}>
