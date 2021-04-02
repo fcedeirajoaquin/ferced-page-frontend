@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Col, Row} from 'reactstrap';
 import Fade from 'react-reveal/Fade';
 import MaterialIcon from 'material-icons-react';
-
+// hola
 class Solutions extends Component {    
     render() {
         return (
