@@ -10,10 +10,10 @@ function App() {
   // const aboutUsRef = React.createRef();
   // const socialNetworksRef = React.createRef();
   // const scrollToRef = (refSection) =>
-    refSection.current.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
+    // refSection.current.scrollIntoView({
+    //   behavior: 'smooth',
+    //   block: 'start',
+    // });
   return (
     <Router>
       <div>
