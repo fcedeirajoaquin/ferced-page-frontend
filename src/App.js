@@ -18,8 +18,7 @@ function App() {
     <Router>
       <div>
         <div className="App" >
-          {/* <Header /> */}
-
+          <Header />
           <div style={{ background: "black", height: "100vh" }}>
             <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '100vh'}}>
               <Fade delay={1500} style={{ width: "1000px" }}>
@@ -33,7 +32,9 @@ function App() {
           <Solutions/>
         </div>
       </div>
-      {/* <Footer contactRef={contactRef} technologyRef={technologyRef} aboutUsRef={aboutUsRef} scrollToRef={scrollToRef} /> */}
+      <Footer/>
+{/* 
+      <Footer contactRef={contactRef} technologyRef={technologyRef} aboutUsRef={aboutUsRef} scrollToRef={scrollToRef} /> */}
     </Router>
   );
 }
