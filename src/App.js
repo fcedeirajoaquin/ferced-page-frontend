@@ -4,8 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Fade from 'react-reveal/Fade';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Solutions from './components/SolutionsWeDeliver/SolutionsWeDeliver';
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
 function App() {
   // const contactRef = React.createRef();
   // const technologyRef = React.createRef();
@@ -20,21 +18,21 @@ function App() {
     <Router>
       <div>
         <div className="App" >
-          <Header />
+          {/* <Header /> */}
           <div style={{ background: "black", height: "100vh" }}>
             <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '100vh'}}>
               <Fade delay={1500} style={{ width: "1000px" }}>
-                <img src="/images/fercedLogo.png" alt="fercedlogo" />
+                <img src={process.env.PUBLIC_URL + "/images/fercedLogo.png"} alt="fercedlogo" />
               </Fade>
               <Fade delay={2000}>
-                <img src="/images/fercedLogoText.png" alt="fercedlogoText" style={{ height: "300px" }} />
+                <img src={process.env.PUBLIC_URL + "/images/fercedLogoText.png"}alt="fercedlogoText" style={{ height: "300px" }} />
               </Fade>
             </div>
           </div>
           <Solutions/>
         </div>
       </div>
-      <Footer/>
+      {/* <Footer/> */}
     </Router>
   );
 }
