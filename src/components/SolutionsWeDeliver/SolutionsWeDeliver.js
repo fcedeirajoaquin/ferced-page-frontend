@@ -14,7 +14,7 @@ class Solutions extends Component {
                 color:"white",  height:"100vh"}}>
                 <div style={{backgroundColor:"black", opacity:"0.8", height:"100%"}}>
                     <Row xs="2" style={{display: 'flex',  justifyContent:'center', alignItems:'center',width:"100%", height:"100%"}} >
-                        <Fade left duration="5000">
+                        <Fade left>
                             <Col>
                             <AutorenewIcon size='large' color="pink"/><p style={{fontSize:"20px"}}> Business Processes Automation</p>
                             </Col>
@@ -22,7 +22,7 @@ class Solutions extends Component {
                             <CodeIcon size='large' color="green"/><p style={{fontSize:"20px"}}> Web y Mobile applications</p>
                             </Col>
                         </Fade>
-                        <Fade right duration="5000">
+                        <Fade right>
                         <Col>
                             <AppsIcon size='large' color="violet"/><p style={{fontSize:"20px"}}> Integrations</p>
                             </Col>

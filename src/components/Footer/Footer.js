@@ -15,7 +15,7 @@ class Footer extends Component {
               <img style={{ height: "30px" }} src={process.env.PUBLIC_URL + "/footerlogo/githublogo.png"} alt={"github"} />
               <img style={{ height: "30px" }} src={process.env.PUBLIC_URL + "/footerlogo/telegramlogo.png"} alt={"telegram"} />
             </Col>
-            <Col style={{ width: "50%" }}>
+            {/* <Col style={{ width: "50%" }}>
               <p style={{ fontSize: '1.15rem' }}>
                 Indice
               </p>
@@ -28,11 +28,11 @@ class Footer extends Component {
               <p onClick={this.props.scrollToRef.bind(this.props.contactRef)}>
                 Contacto
               </p>
-              {/* <p onClick={this.props.scrollToRef.bind(this.props.contactRef)}>
+              <p onClick={this.props.scrollToRef.bind(this.props.contactRef)}>
                 Redes sociales
-              </p> */}
+              </p>
 
-            </Col>
+            </Col> */}
           </Row>
 
         </div>
