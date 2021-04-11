@@ -4,8 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Fade from 'react-reveal/Fade';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Solutions from './components/SolutionsWeDeliver/SolutionsWeDeliver';
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 function App() {
   // const contactRef = React.createRef();
   // const technologyRef = React.createRef();
