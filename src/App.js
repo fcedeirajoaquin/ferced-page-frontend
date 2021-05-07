@@ -4,6 +4,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Fade from 'react-reveal/Fade';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Solutions from './components/SolutionsWeDeliver/SolutionsWeDeliver';
+import WhoWeAre from './components/WhoWeAre/WhoWeAre';
+import ContactUs from './components/ContactUs/ContactUs';
+import Jobs from './components/Jobs/Jobs';
+import Footer from './components/Footer/Footer';
+
 function App() {
   // const contactRef = React.createRef();
   // const technologyRef = React.createRef();
@@ -14,6 +19,7 @@ function App() {
     //   behavior: 'smooth',
     //   block: 'start',
     // });
+    
   return (
     <Router>
       <div>
@@ -29,10 +35,14 @@ function App() {
               </Fade>
             </div>
           </div>
+          <WhoWeAre/>
           <Solutions/>
+          <Jobs/>
+          <ContactUs/>
+          <Footer/>
         </div>
       </div>
-      {/* <Footer/> */}
+      
     </Router>
   );
 }

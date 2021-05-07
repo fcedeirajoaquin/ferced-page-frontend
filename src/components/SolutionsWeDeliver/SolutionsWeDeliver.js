@@ -10,7 +10,7 @@ class Solutions extends Component {
     render() {
         return (
       
-            <div style={{  background:  "url(https://i.pinimg.com/originals/b9/a2/9a/b9a29a075ec4beb68025515f63432880.gif)", backgroundSize:"cover", 
+            <div style={{  background:  "url(https://gifimage.net/wp-content/uploads/2017/10/hd-gif-wallpapers-1080p-3.gif)", backgroundSize:"cover", 
                 color:"white",  height:"100vh"}}>
                 <div style={{backgroundColor:"black", opacity:"0.8", height:"100%"}}>
                     <Row xs="2" style={{display: 'flex',  justifyContent:'center', alignItems:'center',width:"100%", height:"100%"}} >

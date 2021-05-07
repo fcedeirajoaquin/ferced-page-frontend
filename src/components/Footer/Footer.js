@@ -39,7 +39,7 @@ class Footer extends Component {
 
 
         <div style={SecondFooterStyle}>
-          <p style={{ fontSize: '14px' }}>Creada por Ferced 2019 ®</p>
+          <p style={{ fontSize: '14px' }}>Creada por Ferced 2021 ®</p>
           <form>
           </form>
         </div>
@@ -49,13 +49,13 @@ class Footer extends Component {
 }
 
 const FooterStyle = {
-  background: '#1976D2',
+  background: 'black',
   color: '#fff',
   padding: '10px'
 }
 const SecondFooterStyle = {
 
-  background: '#1b71c6',
+  background: 'black',
   color: '#fff',
   textAlign: 'center',
   padding: '7px'

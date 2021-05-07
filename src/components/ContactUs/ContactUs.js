@@ -5,7 +5,6 @@ import TextField from '@material-ui/core/TextField';
 import Grid from '@material-ui/core/Grid';
 import { MessageSharp, PhoneSharp, EmailSharp, AccountCircle } from '@material-ui/icons';
 import Button from '@material-ui/core/Button';
-import Icon from '@material-ui/core/Icon';
 import {
   Row,
   Col,
@@ -25,7 +24,7 @@ export default function ContactUs() {
   return (
     <div style={{ paddingBottom: "60px" }}>
       <div style={{ background: "white", height: "50%", textAlign: "center", marginTop: "50px", marginBottom: "2px" }}>
-        <Typography variant="h2" gutterBottom style={{ color: "rgb(100, 181, 246)" }}>
+        <Typography variant="h2" gutterBottom style={{ color: "Black" }}>
           Contacto
           </Typography>
         <Typography variant="body1" gutterBottom>
@@ -81,10 +80,9 @@ export default function ContactUs() {
       <Button
         variant="contained"
         className={classes.button}
-        endIcon={<Icon>send</Icon>}
         style={{ background: "rgb(25, 118, 210)", color: "white" }}
       >
-        Enviar
+      Enviar
       </Button>
     </div>
   );
