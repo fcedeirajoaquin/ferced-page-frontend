@@ -11,28 +11,23 @@ class Footer extends Component {
         <div style={FooterStyle}>
           <Row>
             <Col style={{ width: "50%" }}>
-              <p style={{ fontSize: '1.15rem' }}>Encontranos tambien en</p>
-              <img style={{ height: "30px" }} src={process.env.PUBLIC_URL + "/footerlogo/githublogo.png"} alt={"github"} />
-              <img style={{ height: "30px" }} src={process.env.PUBLIC_URL + "/footerlogo/telegramlogo.png"} alt={"telegram"} />
-            </Col>
-            {/* <Col style={{ width: "50%" }}>
               <p style={{ fontSize: '1.15rem' }}>
                 Indice
               </p>
-              <p onClick={this.props.scrollToRef.bind(this.props.contactRef)}>
+              <p >
                 Acerca de Ferced
               </p>
-              <p onClick={this.props.scrollToRef.bind(this.props.technologyRef)}>
+              <p >
                 Tecnologias
               </p>
-              <p onClick={this.props.scrollToRef.bind(this.props.contactRef)}>
+              <p >
                 Contacto
               </p>
-              <p onClick={this.props.scrollToRef.bind(this.props.contactRef)}>
+              <p >
                 Redes sociales
               </p>
 
-            </Col> */}
+            </Col>
           </Row>
 
         </div>

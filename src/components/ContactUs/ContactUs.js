@@ -25,10 +25,10 @@ export default function ContactUs() {
     <div style={{ paddingBottom: "60px" }}>
       <div style={{ background: "white", height: "50%", textAlign: "center", marginTop: "50px", marginBottom: "2px" }}>
         <Typography variant="h2" gutterBottom style={{ color: "Black" }}>
-          Contacto
+          Contactanos
           </Typography>
         <Typography variant="body1" gutterBottom>
-          Dejanos tus datos y nosotros te contactamos
+          Contanos tu idea y la desarrollamos
            </Typography>
       </div>
       <Col className="justify-content-md-center" style={{ margin: "0%" }}>
@@ -77,10 +77,11 @@ export default function ContactUs() {
           </div>
         </Row>
       </Col>
+      <br></br>
       <Button
         variant="contained"
         className={classes.button}
-        style={{ background: "rgb(25, 118, 210)", color: "white" }}
+        style={{ background: "black", color: "white" }}
       >
       Enviar
       </Button>

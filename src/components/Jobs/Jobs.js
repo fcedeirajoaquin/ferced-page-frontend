@@ -4,7 +4,6 @@ import Fade from 'react-reveal/Fade';
 import AutorenewIcon from '@material-ui/icons/Autorenew';
 import Button from '@material-ui/core/Button';
 
-
 class Jobs extends Component {    
     render() {
 

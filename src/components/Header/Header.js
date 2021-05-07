@@ -1,67 +1,49 @@
 import React, { Component } from 'react';
-
+import {Col, Row} from 'reactstrap';
+import Fade from 'react-reveal/Fade';
+import Button from '@material-ui/core/Button';
+import KeyboardArrowDown from '@material-ui/icons/KeyboardArrowDown';
 class Header extends Component {
-  state = {
-    color: 'rgba(0,0,0,0.5)'
-  }
-
-  listenScrollEvent = e => {
-    if (window.scrollY/70 > 0.5) {
-      this.setState({color: 'rgba(0,0,0,'+(window.scrollY/70).toString()+')'})
-    } else {
-      this.setState({color: 'rgba(0,0,0,0.5)'})
-    }
-  }
-
-  componentDidMount() {
-    window.addEventListener('scroll', this.listenScrollEvent)
-  }
-  imageShadowStyle = 
-  {
-    filter: 'brightness(0%)',
-    height: "60px",
-    marginLeft: "-30px",
-    position: 'absolute',
-    zIndex: 0
-  }
-  imageStyle = 
-  {
-    height: "60px",
-    marginLeft: "-25px",
-    position: 'absolute',
-    zIndex: 1
-  }
-  headerStyle = 
-  {
-    backgroundColor: this.state.color,
-    color: '#fff',
-    height: '55px',
-    textAlign: 'center',
-    alignContent: "center",
-    position: "fixed",
-    width: "100%",
-    zIndex: 3
-  }
-  render() {
+  
+   render() {
     return (
-      <header style={{
-        backgroundColor: this.state.color,
-    color: '#fff',
-    height: '55px',
-    textAlign: 'center',
-    alignContent: "center",
-    position: "fixed",
-    width: "100%",
-    zIndex: 3
-      }}>
-        <img style={this.imageStyle} src={process.env.PUBLIC_URL + "/ourLogos/fercedLogo.png"} alt={"fercedLogo"} />
-        <img style={this.imageShadowStyle} src={process.env.PUBLIC_URL + "/ourLogos/fercedLogo.png"}  alt={"fercedLogoShadow"}/>
-      </header>
+      <>
+      <div style={{background:"black", height:"100vh"}}>
 
+     
+          <Row >
+            <Col>
+
+                <Fade delay={1500}>
+                  <img src={process.env.PUBLIC_URL + "/images/fercedLogo.png"} alt="fercedlogo" style={{width: '70%'}}/>
+                </Fade>
+
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Fade delay={2000}>
+                    <img src={process.env.PUBLIC_URL + "/images/fercedLogoText.png"}alt="fercedlogoText"  style={{width: '70%'}}/>
+              </Fade>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Fade delay={3000}>
+                <Button variant="contained"
+                        style={{ background: "black", color: "white", size:"100%" }}
+                        href="https://github.com/Ferced"  target="_blank">
+                          <KeyboardArrowDown size='large' color='white'/><p style={{fontSize:"100%"}}></p>
+                </Button>
+                <br></br>
+              </Fade>
+            </Col>
+          </Row>
+          </div>
+      </>
     )
   }
+
 }
-
-
 
 export default Header;
