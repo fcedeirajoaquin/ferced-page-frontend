@@ -15,15 +15,14 @@ class Header extends Component {
             <Col>
 
                 <Fade delay={1500}>
-                  <img src={process.env.PUBLIC_URL + "/images/fercedLogo.png"} alt="fercedlogo" style={{width: '70%'}}/>
+                  <img src={process.env.PUBLIC_URL + "/images/fercedLogo.png"} alt="fercedlogo" style={{width: '30vh'}}/>
                 </Fade>
-
             </Col>
           </Row>
           <Row>
             <Col>
               <Fade delay={2000}>
-                    <img src={process.env.PUBLIC_URL + "/images/fercedLogoText.png"}alt="fercedlogoText"  style={{width: '70%'}}/>
+                    <img src={process.env.PUBLIC_URL + "/images/fercedLogoText.png"}alt="fercedlogoText"  style={{width: '30vh'}}/>
               </Fade>
             </Col>
           </Row>
@@ -31,9 +30,9 @@ class Header extends Component {
             <Col>
               <Fade delay={3000}>
                 <Button variant="contained"
-                        style={{ background: "black", color: "white", size:"100%" }}
+                        style={{ background: "black", color: "white", width:'30vh' }}
                         href="https://github.com/Ferced"  target="_blank">
-                          <KeyboardArrowDown size='large' color='white'/><p style={{fontSize:"100%"}}></p>
+                          <KeyboardArrowDown size='large' color='white'/><p style={{fontSize:"100vh"}}></p>
                 </Button>
                 <br></br>
               </Fade>
