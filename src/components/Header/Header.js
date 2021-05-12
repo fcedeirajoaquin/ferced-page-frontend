@@ -29,7 +29,7 @@ class Header extends Component {
               <Col>
                 <Fade delay={3000}>
                   <Button variant="contained"
-                          style={{ background: "black", color: "white"}}
+                          style={{ background: "white", color: "black", opacity:"0.7"}}
                           href="#whoweare">
                             <KeyboardArrowDown size='large' color='white'/><p></p>
                   </Button>

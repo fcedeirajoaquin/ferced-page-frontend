@@ -5,9 +5,17 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.whowegradient{
+  height: 100vh;
+  background:linear-gradient(rgb(80,200,120),transparent);
+  background-color:#388050 /*this your primary color*/
 }

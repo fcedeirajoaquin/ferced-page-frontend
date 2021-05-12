@@ -9,8 +9,7 @@ class Jobs extends Component {
 
         return (
 
-            <div style={{  background: "#FFFF", backgroundSize:"cover", 
-                color:"white",  height:"100vh"}}>
+            
                 <div style={{backgroundColor:"black", opacity:"0.8", height:"100vh"}}>
                 <Row xs="2" style={{display: 'flex',  justifyContent:'center', alignItems:'center',width:"100%", height:"100%"}} >
                         <Fade left>
@@ -18,7 +17,7 @@ class Jobs extends Component {
                             <AutorenewIcon style={{fontSize:"100px"}}/><p style={{fontSize:"100px"}}>Nuestros Trabajos</p>
                             <Button
                                 variant="contained"
-                                style={{ background: "rgb(25, 118, 210)", color: "black" }}
+                                style={{ background: "rgb(25, 118, 210)", color: "black", fontSize:"100px"}}
                             href="https://github.com/Ferced"  target="_blank">
                             GitHub 
                             </Button>
@@ -26,7 +25,7 @@ class Jobs extends Component {
                         </Fade>
                     </Row>
                 </div>
-            </div> 
+
         )
     }
 }
