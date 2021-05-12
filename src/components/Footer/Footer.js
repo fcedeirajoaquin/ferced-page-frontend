@@ -10,17 +10,17 @@ class Footer extends Component {
       <>
         <div style={FooterStyle}>
           <Row>
-            <Col style={{ width: "50%" }}>
-              <p style={{ fontSize: '1.15rem' }}>
+            <Col style={{ width: "50vh" }}>
+              <p style={{ fontSize: '1.15rem' }} href='#contactus'>
                 Indice
               </p>
-              <p >
+              <p href='#home'>
                 Acerca de Ferced
               </p>
-              <p >
+              <p href='#solution'>
                 Tecnologias
               </p>
-              <p >
+              <p href='#contactus' >
                 Contacto
               </p>
               <p >

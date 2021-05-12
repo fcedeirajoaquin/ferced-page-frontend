@@ -11,11 +11,11 @@ class Jobs extends Component {
 
             <div style={{  background: "#FFFF", backgroundSize:"cover", 
                 color:"white",  height:"100vh"}}>
-                <div style={{backgroundColor:"black", opacity:"0.8", height:"100%"}}>
+                <div style={{backgroundColor:"black", opacity:"0.8", height:"100vh"}}>
                 <Row xs="2" style={{display: 'flex',  justifyContent:'center', alignItems:'center',width:"100%", height:"100%"}} >
                         <Fade left>
                             <Col>
-                            <AutorenewIcon size='large'/><p style={{fontSize:"20px"}}>Nuestros Trabajos</p>
+                            <AutorenewIcon style={{fontSize:"100px"}}/><p style={{fontSize:"100px"}}>Nuestros Trabajos</p>
                             <Button
                                 variant="contained"
                                 style={{ background: "rgb(25, 118, 210)", color: "black" }}

@@ -22,8 +22,8 @@ const useStyles = makeStyles(theme => ({
 export default function ContactUs() {
   const classes = useStyles();
   return (
-    <div style={{ paddingBottom: "60px" }}>
-      <div style={{ background: "white", height: "25vh", textAlign: "center", marginTop: "50px", marginBottom: "2px" }}>
+    <div style={{ paddingBottom: "60px" }} id='contactus'>
+      <div style={{ background: "white", height: "25%", textAlign: "center", marginTop: "50px", marginBottom: "2px" }}>
         <Typography variant="h2" gutterBottom style={{ color: "Black" }}>
           Contactanos
           </Typography>
@@ -39,7 +39,7 @@ export default function ContactUs() {
                 <AccountCircle />
               </Grid>
               <Grid item>
-                <TextField style={{ width: "130%" }} id="input-with-icon-grid" label="Nombre" />
+                <TextField style={{ width: "100%" }} id="input-with-icon-grid" label="Nombre" />
               </Grid>
             </Grid>
           </div>
@@ -49,7 +49,7 @@ export default function ContactUs() {
                 <PhoneSharp />
               </Grid>
               <Grid item>
-                <TextField style={{ width: "130%" }} id="input-with-icon-grid" label="Telefono" />
+                <TextField style={{ width: "100%" }} id="input-with-icon-grid" label="Telefono" />
               </Grid>
             </Grid>
           </div>
@@ -61,7 +61,7 @@ export default function ContactUs() {
                 <EmailSharp />
               </Grid>
               <Grid item>
-                <TextField style={{ width: "130%" }} id="input-with-icon-grid" label="Email" />
+                <TextField style={{ width: "100%" }} id="input-with-icon-grid" label="Email" />
               </Grid>
             </Grid>
           </div>
@@ -71,7 +71,7 @@ export default function ContactUs() {
                 <MessageSharp />
               </Grid>
               <Grid item>
-                <TextField style={{ width: "130%" }} id="input-with-icon-grid" label="Mensaje" />
+                <TextField style={{ width: "100%" }} id="input-with-icon-grid" label="Mensaje" />
               </Grid>
             </Grid>
           </div>

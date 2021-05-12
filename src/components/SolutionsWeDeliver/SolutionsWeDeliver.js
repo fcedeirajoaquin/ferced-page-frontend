@@ -11,8 +11,8 @@ class Solutions extends Component {
         return (
       
             <div style={{  background:  "url(https://gifimage.net/wp-content/uploads/2017/10/hd-gif-wallpapers-1080p-3.gif)", backgroundSize:"cover", 
-                color:"white",  height:"100vh"}}>
-                <div style={{backgroundColor:"black", opacity:"0.8", height:"100%"}}>
+                color:"white",  height:"100vh"}} id='solution'>
+                <div style={{backgroundColor:"black", opacity:"0.8", height:"100vh"}}>
                     <Row xs="2" style={{display: 'flex',  justifyContent:'center', alignItems:'center',width:"100%", height:"100%"}} >
                         <Fade left>
                             <Col>
