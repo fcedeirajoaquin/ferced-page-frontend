@@ -9,11 +9,8 @@ class Header extends Component {
     return (
       <>
       <div style={{background:"black", height:"100vh"}}>
-
-     
           <Row >
             <Col>
-
                 <Fade delay={1500}>
                   <img src={process.env.PUBLIC_URL + "/images/fercedLogo.png"} alt="fercedlogo" style={{width: '30vh'}}/>
                 </Fade>
@@ -30,9 +27,9 @@ class Header extends Component {
             <Col>
               <Fade delay={3000}>
                 <Button variant="contained"
-                        style={{ background: "black", color: "white", width:'30vh' }}
+                        style={{ background: "black", color: "white"}}
                         href="https://github.com/Ferced"  target="_blank">
-                          <KeyboardArrowDown size='large' color='white'/><p style={{fontSize:"100vh"}}></p>
+                          <KeyboardArrowDown size='large' color='white'/><p></p>
                 </Button>
                 <br></br>
               </Fade>

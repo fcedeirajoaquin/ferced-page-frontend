@@ -23,7 +23,7 @@ export default function ContactUs() {
   const classes = useStyles();
   return (
     <div style={{ paddingBottom: "60px" }}>
-      <div style={{ background: "white", height: "50%", textAlign: "center", marginTop: "50px", marginBottom: "2px" }}>
+      <div style={{ background: "white", height: "25vh", textAlign: "center", marginTop: "50px", marginBottom: "2px" }}>
         <Typography variant="h2" gutterBottom style={{ color: "Black" }}>
           Contactanos
           </Typography>
