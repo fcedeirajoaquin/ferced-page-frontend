@@ -9,8 +9,8 @@ class Header extends Component {
    render() {
     return (
       <>
-        <ParticlesBg color="#009D71" type="cobweb" bg={true} />
-        <header id="home" style={{height: '100vh', background:"black", opacity:"0.9"}}>
+        <ParticlesBg color="#009D71" type="cobweb" bg={true}  />
+        <header id="home" style={{height: '100vh', background:"black", opacity:"0.8"}}>
             <Row >
               <Col>
                   <Fade delay={1500}>
@@ -28,10 +28,18 @@ class Header extends Component {
             <Row>
               <Col>
                 <Fade delay={3000}>
+                  <p style={{color:"white"}}>Somos una startup argentina cuyo objetivo es digitalizar procesos y resolver problemas comerciales con nuestro poder de codigo.</p>
+                  <br></br>
+                </Fade>
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <Fade delay={3200} left>
                   <Button variant="contained"
                           style={{ background: "white", color: "black", opacity:"0.7"}}
                           href="#whoweare">
-                            <KeyboardArrowDown size='large' color='white'/><p></p>
+                            <KeyboardArrowDown size='large' color='white'/>          
                   </Button>
                   <br></br>
                 </Fade>

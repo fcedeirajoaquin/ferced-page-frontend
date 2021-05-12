@@ -14,25 +14,30 @@ class WhoWeAre extends Component {
                 <Row xs="2" style={{display: 'flex',  justifyContent:'center', alignItems:'center',width:"100%", height:"100%"}} >
                     <Fade left>
                         <Col>
+
+                        <img src={process.env.PUBLIC_URL + "/images/logoUser.png"} alt="logoUser" style={{height: '30vh'}}/>
+
                         <p style={{color:"white", fontSize:"40px"}}>Joaquin Cedeira</p>
                             <p style={{color:"white"}}>Guardian of Systems</p>
                             <Button
                                 variant="contained"
-                                style={{ background: "#c850a0", color: "white", fontSize:"20px"}}
-                            href="https://github.com/Ferced"  target="_blank">
-                            Linkedin 
+                                style={{background: "rgba(138,221,45,0)", border:"none", color: "white", fontSize:"20px"}}
+                            href="https://www.linkedin.com/mwlite/in/joaquin-fernandez-cedeira-75949012b"  target="_blank">
+                                <img src={process.env.PUBLIC_URL + "/images/linkedinLogo.png"} alt="linkedinLogo" style={{height: '15vh'}}/>
                             </Button>
                         </Col>
                     </Fade>
                     <Fade right>
                         <Col>
+                        <img src={process.env.PUBLIC_URL + "/images/logoUser.png"} alt="fercedlogo" style={{height: '30vh'}}/>
                         <p style={{color:"white", fontSize:"40px"}}>Franco Ferreira</p>
                             <p style={{color:"white"}}>Connections and some code</p>
                             <Button
                                 variant="contained"
-                                style={{ background: "#c850a0", color: "white", fontSize:"20px"}}
-                            href="https://github.com/Ferced"  target="_blank">
-                            Linkedin
+                                style={{ background: "rgba(138,221,45,0)", border:"none", color: "white", fontSize:"20px"}}
+                            href="https://www.linkedin.com/in/franco-ferreira-17b473182/"  target="_blank">
+                            <img src={process.env.PUBLIC_URL + "/images/linkedinLogo.png"} alt="linkedinLogo" style={{height: '15vh'}}/>
+
                             </Button>
                         </Col>
                     </Fade>

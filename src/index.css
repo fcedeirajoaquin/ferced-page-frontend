@@ -16,6 +16,6 @@ code {
 
 .whowegradient{
   height: 100vh;
-  background:linear-gradient(rgb(80,200,120),transparent);
-  background-color:#388050 /*this your primary color*/
+  background:linear-gradient(rgb(1, 255, 86),transparent);
+  background-color: black/*this your primary color*/
 }
