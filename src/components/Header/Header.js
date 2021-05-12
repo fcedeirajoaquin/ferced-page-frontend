@@ -11,8 +11,6 @@ class Header extends Component {
       <>
         <ParticlesBg color="#009D71" type="cobweb" bg={true} />
         <header id="home" style={{height: '100vh', background:"black", opacity:"0.9"}}>
-        
-  
             <Row >
               <Col>
                   <Fade delay={1500}>
