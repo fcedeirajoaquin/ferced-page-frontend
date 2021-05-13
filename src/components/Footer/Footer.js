@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import {
-  Row,
-  Col
-} from "reactstrap";
+// import {
+//   Row,
+//   Col
+// } from "reactstrap";
 
 class Footer extends Component {
   render() {
     return (
       <>
-        <div style={FooterStyle}>
+        {/* <div style={FooterStyle}>
           <Row>
             <Col style={{ width: "50vh" }}>
               <p style={{ fontSize: '1.15rem' }} href='#contactus'>
@@ -30,11 +30,11 @@ class Footer extends Component {
             </Col>
           </Row>
 
-        </div>
+        </div> */}
 
 
         <div style={SecondFooterStyle}>
-          <p style={{ fontSize: '14px' }}>Creada por Ferced 2021 ®</p>
+          <p style={{ fontSize: '14px' }}>Ferced 2021 ®</p>
           <form>
           </form>
         </div>
@@ -43,11 +43,11 @@ class Footer extends Component {
   }
 }
 
-const FooterStyle = {
-  background: 'black',
-  color: '#fff',
-  padding: '10px'
-}
+// const FooterStyle = {
+//   background: 'black',
+//   color: '#fff',
+//   padding: '10px'
+// }
 const SecondFooterStyle = {
 
   background: 'black',

@@ -2,12 +2,11 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Grid from '@material-ui/core/Grid';
-import { MessageSharp, EmailSharp, AccountCircle } from '@material-ui/icons';
+import { MessageSharp, PhoneSharp, EmailSharp, AccountCircle } from '@material-ui/icons';
 import Button from '@material-ui/core/Button';
 import {
   Row,
   Col,
-  Fade,
 } from "reactstrap";
 import "./ContactUs.css"
 
@@ -22,14 +21,10 @@ const useStyles = makeStyles(theme => ({
 export default function ContactUs() {
   const classes = useStyles();
   return (
-    <div style={{ paddingBottom: "60px" }} id='contactus'>
-      <Row >
-        <Col>
-        <Fade delay={1500}>
-            <img src={process.env.PUBLIC_URL + "/images/fercedLogo.png"} alt="fercedlogo" style={{height: '30vh'}}/>
-        </Fade>
-              </Col>
-            </Row>
+    <div style={{ paddingBottom: "60px", background: "white" }}>
+      <img src={process.env.PUBLIC_URL + "/images/fercedLogo.png"} alt="fercedlogo" style={{height: '30vh'}}/>
+      <img src={process.env.PUBLIC_URL + "/images/fercedLogoText.png"}alt="fercedlogoText"  style={{height: '30vh'}}/>
+
       <Col className="justify-content-md-center" style={{ margin: "0%" }}>
         <Row className="justify-content-md-center">
           <div className={classes.margin} style={{ marginRight: "8%" }}>
@@ -38,29 +33,39 @@ export default function ContactUs() {
                 <AccountCircle />
               </Grid>
               <Grid item>
-                <TextField style={{ width: "100%" }} id="input-with-icon-grid" label="Nombre" />
+                <TextField style={{ width: "130%", color:"white" }} id="input-with-icon-grid" label="Nombre" />
               </Grid>
             </Grid>
           </div>
+          <div className={classes.margin}>
+            <Grid container spacing={1} alignItems="flex-end">
+              <Grid item>
+                <PhoneSharp />
+              </Grid>
+              <Grid item>
+                <TextField style={{ width: "130%" }} id="input-with-icon-grid" label="Telefono" />
+              </Grid>
+            </Grid>
+          </div>
+        </Row>
+        <Row className="justify-content-md-center">
           <div className={classes.margin} style={{ marginRight: "8%" }}>
             <Grid container spacing={1} alignItems="flex-end">
               <Grid item>
                 <EmailSharp />
               </Grid>
               <Grid item>
-                <TextField style={{ width: "100%" }} id="input-with-icon-grid" label="Email" />
+                <TextField style={{ width: "130%" }} id="input-with-icon-grid" label="Email" />
               </Grid>
             </Grid>
           </div>
-        </Row>
-        <Row className="justify-content-md-center">
           <div className={classes.margin}>
             <Grid container spacing={1} alignItems="flex-end">
               <Grid item>
                 <MessageSharp />
               </Grid>
               <Grid item>
-                <TextField style={{ width: "100%" }} id="input-with-icon-grid" label="Mensaje" />
+                <TextField style={{ width: "130%" }} id="input-with-icon-grid" label="Mensaje" />
               </Grid>
             </Grid>
           </div>

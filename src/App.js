@@ -9,6 +9,7 @@ import Jobs from './components/Jobs/Jobs';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
+
 function App() {
   // const contactRef = React.createRef();
   // const technologyRef = React.createRef();

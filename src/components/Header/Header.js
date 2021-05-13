@@ -35,7 +35,7 @@ class Header extends Component {
             </Row>
             <Row>
               <Col>
-                <Fade delay={3200} left>
+                <Fade delay={3200} >
                   <Button variant="contained"
                           style={{ background: "white", color: "black", opacity:"0.7"}}
                           href="#whoweare">
