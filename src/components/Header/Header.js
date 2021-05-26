@@ -9,8 +9,8 @@ class Header extends Component {
    render() {
     return (
       <>
-        <ParticlesBg color="#009D71" type="cobweb" bg={true}  />
-        <header id="home" style={{height: '100vh', background:"black", opacity:"0.8"}}>
+        <ParticlesBg color="#009D71" type="cobweb" bg={true} style={{background:'black'}} />
+        <header id="home" style={{height: '100vh'}}>
             <Row >
               <Col>
                   <Fade delay={1500}>
