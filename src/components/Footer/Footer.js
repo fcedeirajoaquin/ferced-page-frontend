@@ -1,58 +1,48 @@
 import React, { Component } from 'react';
-// import {
-//   Row,
-//   Col
-// } from "reactstrap";
-
+ import {
+   Row,
+  Col
+ } from "reactstrap";
+ import Button from '@material-ui/core/Button';
 class Footer extends Component {
   render() {
     return (
       <>
-        {/* <div style={FooterStyle}>
-          <Row>
-            <Col style={{ width: "50vh" }}>
-              <p style={{ fontSize: '1.15rem' }} href='#contactus'>
-                Indice
-              </p>
-              <p href='#home'>
-                Acerca de Ferced
-              </p>
-              <p href='#solution'>
-                Tecnologias
-              </p>
-              <p href='#contactus' >
-                Contacto
-              </p>
-              <p >
-                Redes sociales
-              </p>
-
-            </Col>
-          </Row>
-
-        </div> */}
-
-
-        <div style={SecondFooterStyle}>
-          <p style={{ fontSize: '14px' }}>Ferced 2021 ®</p>
-          <form>
-          </form>
-        </div>
+      <div style={{height: '5vh', width:'100%', background:"black", marginLeft:"-2vh"}}>
+            <Row xs="3" style={{background:"black"}}>
+              <Col >
+              <Button
+                                variant="contained"
+                                style={{color: "black", fontSize:"10px", background:"black"}}
+                            href="https://github.com/Ferced"  target="_blank">
+                            <img src={process.env.PUBLIC_URL + "/images/instagram.png"} alt="githublogo" style={{height: '5vh'}}/>
+                            </Button>
+              </Col>
+       
+           
+              <Col >
+              <Button
+                                variant="contained"
+                                style={{color: "black", fontSize:"30px", background:"black"}}
+                            href="https://t.me/frxnco"  target="_blank">
+                            <img src={process.env.PUBLIC_URL + "/images/telegram.png"} alt="telegramLogo" style={{height: '5vh'}}/>
+                            </Button>
+              </Col>
+  
+              <Col >
+              <Button
+                                variant="contained"
+                                style={{color: "black", fontSize:"30px", background:"black"}}
+                            href="https://github.com/Ferced"  target="_blank">
+                            <img src={process.env.PUBLIC_URL + "/images/github.png"} alt="githublogo" style={{height: '5vh'}}/>
+                            </Button>
+              </Col>
+            </Row> 
+      </div>
+        
       </>
     )
   }
 }
 
-// const FooterStyle = {
-//   background: 'black',
-//   color: '#fff',
-//   padding: '10px'
-// }
-const SecondFooterStyle = {
-
-  background: 'black',
-  color: '#fff',
-  textAlign: 'center',
-  padding: '7px'
-}
 export default Footer;

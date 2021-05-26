@@ -15,7 +15,7 @@ class WhoWeAre extends Component {
                     <Fade left>
                         <Col>
 
-                            <img src={process.env.PUBLIC_URL + "/images/logoJoaco.png"} alt="logoUser" style={{height: '17vh'}}/>
+                            <img src={process.env.PUBLIC_URL + "/images/logoJoaco.png"} alt="logoUser" style={{height: '16vh'}}/>
                             <p style={{color:"white", fontSize:"30px"}}>Joaquin Cedeira</p>
                                 <p style={{color:"white"}}>Guardian of Systems</p>
                                 <Button
@@ -28,7 +28,7 @@ class WhoWeAre extends Component {
                     </Fade>
                     <Fade right>
                         <Col>
-                        <img src={process.env.PUBLIC_URL + "/images/logoJoaco.png"} alt="logoUser" style={{height: '17vh'}}/>
+                        <img src={process.env.PUBLIC_URL + "/images/logoFranco.png"} alt="logoUser" style={{height: '14vh'}}/>
                                 <p style={{color:"white", fontSize:"30px"}}>Franco Ferreira</p>
                                 <p style={{color:"white"}}>Conections / Code</p>
                                 <Button
