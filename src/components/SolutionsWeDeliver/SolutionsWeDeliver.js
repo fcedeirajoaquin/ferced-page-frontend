@@ -10,10 +10,8 @@ class Solutions extends Component {
     render() {
         return (
       
-            <div style={{  background:  "black", backgroundSize:"cover", 
-                color:"white",  height:"100vh"}} id='solution'>
-                <div style={{backgroundColor:"black", opacity:"0.8", height:"100vh"}}>
-                    <Row xs="2" style={{display: 'flex',  justifyContent:'center', alignItems:'center',width:"100%", height:"100%"}} >
+            <div style={{ background: "black", height:"50vh"}} id='solution'>
+                    <Row xs="2" style={{display: 'flex',  justifyContent:'center', alignItems:'center',width:"100%", height:"100%", color:"white"}} >
                         <Fade left>
                             <Col>
                             <AutorenewIcon size='large'/><p style={{fontSize:"20px"}}> Business Processes Automation</p>
@@ -33,7 +31,6 @@ class Solutions extends Component {
                     
                     </Row>
                 </div>
-            </div> 
         )
     }
 }

@@ -14,17 +14,6 @@ code {
     monospace;
 }
 
-.whowegradient{
-  height: 100vh;
-  background:linear-gradient(rgb(0, 0, 0),transparent);
-  background-color: black/*this your primary color*/
-}
-
-.jobgradient{
-  height: 100vh;
-  background:linear-gradient(rgb(0, 0, 0),transparent);
-  background-color: black/*this your primary color*/
-}
 
 .particles-bg-canvas-self{
   background: #000;

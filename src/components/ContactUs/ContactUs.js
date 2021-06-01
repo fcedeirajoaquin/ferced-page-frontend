@@ -23,8 +23,8 @@ export default function ContactUs() {
   return (
     <div style={{ paddingBottom: "60px", background: "white"}}>
       <div style={{background:"black"}}>
-        <img src={process.env.PUBLIC_URL + "/images/fercedLogo.png"} alt="fercedlogo" style={{height: '30vh'}}/>
-        <img src={process.env.PUBLIC_URL + "/images/fercedLogoText.png"}alt="fercedlogoText"  style={{height: '30vh'}}/>
+        <img src={process.env.PUBLIC_URL + "/images/fercedLogo.png"} alt="fercedlogo" style={{height: '20vh'}}/>
+        <img src={process.env.PUBLIC_URL + "/images/fercedLogoText.png"}alt="fercedlogoText"  style={{height: '20vh'}}/>
       </div>
       <Col className="justify-content-md-center" style={{ margin: "0%" }}>
         <Row className="justify-content-md-center">

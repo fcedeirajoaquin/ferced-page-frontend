@@ -10,7 +10,7 @@ class Header extends Component {
     return (
       <>
         <ParticlesBg color="#009D71" type="cobweb" bg={true} style={{background:'black'}} />
-        <header id="home" style={{height: '90vh', width:'95%'}}>
+        <header id="home" style={{height: '100vh', width:'95%'}}>
             <Row >
               <Col>
                   <Fade delay={1500}>
@@ -28,7 +28,7 @@ class Header extends Component {
             <Row>
               <Col>
                 <Fade delay={3000}>
-                  <p style={{color:"white"}}>Somos una startup argentina cuyo objetivo es digitalizar procesos y resolver problemas comerciales con nuestro poder de codigo.</p>
+                  <p style={{color:"white"}}>Resolvemos tu negocio con nuestro poder de software</p>
                   <br></br>
                 </Fade>
               </Col>
