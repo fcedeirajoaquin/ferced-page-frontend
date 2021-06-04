@@ -18,7 +18,7 @@ class Header extends Component {
               <div>
                 <Row >
                   <Col>
-                      <Fade delay={1500}>
+                      <Fade delay={500}>
                         <img src={process.env.PUBLIC_URL + "/images/fercedLogo.png"} alt="fercedlogo" style={{height: '20vh'}}/>
                         <img src={process.env.PUBLIC_URL + "/images/fercedLogoText.png"}alt="fercedlogoText"  style={{height: '20vh'}}/>
                       </Fade>
@@ -26,7 +26,7 @@ class Header extends Component {
                 </Row>
                 <Row>
                   <Col>
-                    <Fade delay={3000}>
+                    <Fade delay={800}>
                       <p style={{color:"white"}}>We solve your business with our software</p>
                       <br></br>
                     </Fade>
@@ -35,7 +35,7 @@ class Header extends Component {
               </div>
               <div id="#whoweare">
                       <Row xs="2" >
-                          <Fade left>
+                          <Fade left delay={900}>
                               <Col>
                               <img src={process.env.PUBLIC_URL + "/images/logoJoaco.png"} alt="logoJoaco" style={{height: '10vh'}}/>
                               <p style={{color:"white", fontSize:"15px"}}>Joaquin Cedeira</p>
@@ -48,7 +48,7 @@ class Header extends Component {
                                   </Button>
                               </Col>
                           </Fade>
-                          <Fade left>
+                          <Fade right delay={900}>
                               <Col>
                               <img src={process.env.PUBLIC_URL + "/images/logoFranco.png"} alt="logoFranco" style={{height: '10vh'}}/>
                                   <p style={{color:"white", fontSize:"15px"}}>Franco Ferreira</p>
@@ -65,7 +65,8 @@ class Header extends Component {
                       </Row>
               </div>
               <br></br>
-              <div style={{paddingTop:"5%"}}>
+              <div>
+              <Fade bottom delay={1500}>
                 <Row>
                   <Col >
                     <b><p style={{color:"white", fontSize:"20px",}}>Te contactamos!</p></b>
@@ -77,6 +78,7 @@ class Header extends Component {
                     </form>
                   </Col>
                 </Row>
+               
                 <br></br>
                 <Row xs="3">
                   <Col >
@@ -101,7 +103,8 @@ class Header extends Component {
                   </Button>
                   </Col>
 
-                </Row> 
+                </Row>
+                </Fade> 
               </div>
             </div>
       </>

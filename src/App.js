@@ -24,11 +24,15 @@ function App() {
     
   return (
     <Router >
+      <div className="fill-window">
+
+      
       <Header />
           {/* <WhoWeAre/> */}
           {/* <Solutions/>
           <Jobs/> */}
           {/* <Footer/> */}
+          </div>
     </Router>
   );
 }
