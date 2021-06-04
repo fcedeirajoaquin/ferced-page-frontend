@@ -2,12 +2,13 @@ import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router } from 'react-router-dom';
-import Solutions from './components/SolutionsWeDeliver/SolutionsWeDeliver';
-import WhoWeAre from './components/WhoWeAre/WhoWeAre';
-import ContactUs from './components/ContactUs/ContactUs';
-import Jobs from './components/Jobs/Jobs';
+// import Solutions from './components/SolutionsWeDeliver/SolutionsWeDeliver';
+// import WhoWeAre from './components/WhoWeAre/WhoWeAre';
+// import ContactUs from './components/ContactUs/ContactUs';
+// import Jobs from './components/Jobs/Jobs';
 import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
+// import Footer from './components/Footer/Footer';
+
 
 
 function App() {
@@ -22,18 +23,12 @@ function App() {
     // });
     
   return (
-    <Router>
-      <div>
-        <div className="App" >
-          <Header />
-          <WhoWeAre/>
-          <Solutions/>
-          <Jobs/>
-          <ContactUs/>
-          <Footer/>
-        </div>
-      </div>
-      
+    <Router >
+      <Header />
+          {/* <WhoWeAre/> */}
+          {/* <Solutions/>
+          <Jobs/> */}
+          {/* <Footer/> */}
     </Router>
   );
 }

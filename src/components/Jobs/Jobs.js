@@ -9,7 +9,7 @@ class Jobs extends Component {
         return (
 
             
-                <div style={{height:"50vh", background:"black"}}>
+                <div style={{ background:"black"}}>
                 <Row xs="2" style={{display: 'flex',  justifyContent:'center', alignItems:'center',width:"100%", height:"100%"}} >
                         <Fade left>
                             <Col>

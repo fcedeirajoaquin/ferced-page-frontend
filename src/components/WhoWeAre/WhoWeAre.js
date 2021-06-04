@@ -7,7 +7,7 @@ class WhoWeAre extends Component {
     render() {
         return (
             <>
-            <div style={{ background: "black", height:"50vh"}}>
+            <div id="#whoweare" style={{ background: "black"}}>
                     <Row xs="2" style={{display: 'flex',  justifyContent:'center', alignItems:'center',width:"100%", height:"100%"}} >
                         <Fade left>
                             <Col>

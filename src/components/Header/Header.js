@@ -1,52 +1,109 @@
 import React, { Component } from 'react';
 import {Col, Row} from 'reactstrap';
 import Fade from 'react-reveal/Fade';
-import Button from '@material-ui/core/Button';
-import KeyboardArrowDown from '@material-ui/icons/KeyboardArrowDown';
 import ParticlesBg from 'particles-bg';
+import { Button } from '@material-ui/core';
+// import AutorenewIcon from '@material-ui/icons/Autorenew';
+// import CodeIcon from '@material-ui/icons/Code';
+// import AppsIcon from '@material-ui/icons/Apps';
+// import BackupIcon from '@material-ui/icons/Backup';
+import "./Header.css"
 class Header extends Component {
   
    render() {
     return (
       <>
-        <ParticlesBg color="#009D71" type="cobweb" bg={true} style={{background:'black'}} />
-        <header id="home" style={{height: '100vh', width:'95%'}}>
-            <Row >
-              <Col>
-                  <Fade delay={1500}>
-                    <img src={process.env.PUBLIC_URL + "/images/fercedLogo.png"} alt="fercedlogo" style={{height: '30vh'}}/>
-                  </Fade>
-              </Col>
-            </Row>
-            <Row>
-              <Col>
-                <Fade delay={2000}>
-                      <img src={process.env.PUBLIC_URL + "/images/fercedLogoText.png"}alt="fercedlogoText"  style={{height: '30vh'}}/>
-                </Fade>
-              </Col>
-            </Row>
-            <Row>
-              <Col>
-                <Fade delay={3000}>
-                  <p style={{color:"white"}}>Resolvemos tu negocio con nuestro poder de software</p>
-                  <br></br>
-                </Fade>
-              </Col>
-            </Row>
-            <Row>
-              <Col>
-                <Fade delay={3200} >
-                  <Button variant="contained"
-                          style={{ background: "white", color: "black", opacity:"0.7"}}
-                          href="#whoweare">
-                            <KeyboardArrowDown size='large' color='white'/>          
+            <div class="Header">...
+              <ParticlesBg type="cobweb" color="#50C878" num={20}  bg={true} />
+              <div>
+                <Row >
+                  <Col>
+                      <Fade delay={1500}>
+                        <img src={process.env.PUBLIC_URL + "/images/fercedLogo.png"} alt="fercedlogo" style={{height: '20vh'}}/>
+                        <img src={process.env.PUBLIC_URL + "/images/fercedLogoText.png"}alt="fercedlogoText"  style={{height: '20vh'}}/>
+                      </Fade>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col>
+                    <Fade delay={3000}>
+                      <p style={{color:"white"}}>We solve your business with our software</p>
+                      <br></br>
+                    </Fade>
+                  </Col>
+                </Row>
+              </div>
+              <div id="#whoweare">
+                      <Row xs="2" >
+                          <Fade left>
+                              <Col>
+                              <img src={process.env.PUBLIC_URL + "/images/logoJoaco.png"} alt="logoJoaco" style={{height: '10vh'}}/>
+                              <p style={{color:"white", fontSize:"15px"}}>Joaquin Cedeira</p>
+                              <p style={{color:"white"}}>Systems's Guardian</p>
+                                  <Button
+                                      variant="contained"
+                                      style={{ border:"none", color: "white", fontSize:"10px"}}
+                                      href="https://www.linkedin.com/mwlite/in/joaquin-fernandez-cedeira-75949012b"  target="_blank">
+                                      <img src={process.env.PUBLIC_URL + "/images/linkedinLogo.png"} alt="linkedinLogo" style={{height: '5vh'}}/>
+                                  </Button>
+                              </Col>
+                          </Fade>
+                          <Fade left>
+                              <Col>
+                              <img src={process.env.PUBLIC_URL + "/images/logoFranco.png"} alt="logoFranco" style={{height: '10vh'}}/>
+                                  <p style={{color:"white", fontSize:"15px"}}>Franco Ferreira</p>
+                                  <p style={{color:"white"}}>Conections / Code</p>
+                                  <Button
+                                      variant="contained"
+                                      style={{ border:"none", color: "white", fontSize:"10px"}}
+                                      href="https://www.linkedin.com/mwlite/in/joaquin-fernandez-cedeira-75949012b"  target="_blank">
+                                      <img src={process.env.PUBLIC_URL + "/images/linkedinLogo.png"} alt="linkedinLogo" style={{height: '5vh'}}/>
+                                  </Button>
+                              </Col>
+                          </Fade>
+                      
+                      </Row>
+              </div>
+              <br></br>
+              <div style={{paddingTop:"5%"}}>
+                <Row>
+                  <Col >
+                    <b><p style={{color:"white", fontSize:"20px",}}>Te contactamos!</p></b>
+                    <form>
+                      <label>
+                        <input type="text" name="name" placeholder="Ingrese su mail o telefono"/>
+                      </label>
+                      <input type="submit" value="Enviar" />
+                    </form>
+                  </Col>
+                </Row>
+                <br></br>
+                <Row xs="3">
+                  <Col >
+                  <Button
+                          variant="contained"
+                          href="https://github.com/Ferced"  target="_blank">
+                          <img src={process.env.PUBLIC_URL + "/images/instagram.png"} alt="githublogo" style={{height: '5vh'}}/>
                   </Button>
-                  <br></br>
-                </Fade>
-              </Col>
-            </Row>
-         
-        </header>
+                  </Col>
+                  <Col >
+                  <Button
+                        variant="contained"
+                        href="https://github.com/Ferced"  target="_blank">
+                        <img src={process.env.PUBLIC_URL + "/images/github.png"} alt="githublogo" style={{height: '5vh'}}/>
+                  </Button>
+                  </Col>
+                  <Col >
+                  <Button
+                          variant="contained"
+                          href="https://t.me/frxnco"  target="_blank">
+                          <img src={process.env.PUBLIC_URL + "/images/telegram.png"} alt="telegramLogo" style={{height: '5vh'}}/>
+                  </Button>
+                  </Col>
+
+                </Row> 
+              </div>
+            </div>
       </>
     )
   }
