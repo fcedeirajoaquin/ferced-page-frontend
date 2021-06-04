@@ -69,12 +69,12 @@ class Header extends Component {
               <Fade bottom delay={1500}>
                 <Row>
                   <Col >
-                    <b><p style={{color:"white", fontSize:"20px",}}>Te contactamos!</p></b>
+                    <b><p style={{color:"white", fontSize:"20px",}}>We contact you!</p></b>
                     <form>
                       <label>
-                        <input type="text" name="name" placeholder="Ingrese su mail o telefono"/>
+                        <input type="text" name="name" placeholder="Input mail or phone" variant="contained"/>
                       </label>
-                      <input type="submit" value="Enviar" />
+                      <input type="submit" value="Send"  style={{marginLeft:"2px"}}/>
                     </form>
                   </Col>
                 </Row>
