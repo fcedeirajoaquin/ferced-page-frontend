@@ -1,13 +1,15 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Fade from 'react-reveal/Fade';
 import { BrowserRouter as Router } from 'react-router-dom';
-import Solutions from './components/SolutionsWeDeliver/SolutionsWeDeliver';
-import WhoWeAre from './components/WhoWeAre/WhoWeAre';
-import ContactUs from './components/ContactUs/ContactUs';
-import Jobs from './components/Jobs/Jobs';
-import Footer from './components/Footer/Footer';
+// import Solutions from './components/SolutionsWeDeliver/SolutionsWeDeliver';
+// import WhoWeAre from './components/WhoWeAre/WhoWeAre';
+// import ContactUs from './components/ContactUs/ContactUs';
+// import Jobs from './components/Jobs/Jobs';
+import Header from './components/Header/Header';
+// import Footer from './components/Footer/Footer';
+
+
 
 function App() {
   // const contactRef = React.createRef();
@@ -21,28 +23,16 @@ function App() {
     // });
     
   return (
-    <Router>
-      <div>
-        <div className="App" >
-          {/* <Header /> */}
-          <div style={{ background: "black", height: "100vh" }}>
-            <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '100vh'}}>
-              <Fade delay={1500} style={{ width: "1000px" }}>
-                <img src={process.env.PUBLIC_URL + "/images/fercedLogo.png"} alt="fercedlogo" />
-              </Fade>
-              <Fade delay={2000}>
-                <img src={process.env.PUBLIC_URL + "/images/fercedLogoText.png"}alt="fercedlogoText" style={{ height: "300px" }} />
-              </Fade>
-            </div>
-          </div>
-          <WhoWeAre/>
-          <Solutions/>
-          <Jobs/>
-          <ContactUs/>
-          <Footer/>
-        </div>
-      </div>
+    <Router >
+      <div className="fill-window">
+
       
+      <Header />
+          {/* <WhoWeAre/> */}
+          {/* <Solutions/>
+          <Jobs/> */}
+          {/* <Footer/> */}
+          </div>
     </Router>
   );
 }
